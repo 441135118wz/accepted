@@ -2,13 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://441135118wz.github.io/accepted</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-04-11T14:28:48.808Z</updated>
+    <updated>2020-04-12T08:46:43.522Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
     <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
     <logo>https://441135118wz.github.io/accepted/images/avatar.png</logo>
     <icon>https://441135118wz.github.io/accepted/favicon.ico</icon>
     <rights>All rights reserved 2020, ori&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.4.12]]></title>
+        <id>https://441135118wz.github.io/accepted/post/2020412/</id>
+        <link href="https://441135118wz.github.io/accepted/post/2020412/">
+        </link>
+        <updated>2020-04-12T08:42:50.000Z</updated>
+        <content type="html"><![CDATA[<p>P1502 窗口的星星  扫描线类模板题</p>
+<p>P4588 [TJOI2018]数学计算 线段树题</p>
+<p>P1168 中位数 用stl（vector）很简单</p>
+<p>P1128 [HNOI2001]求正整数  搜索题</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.4.11]]></title>
         <id>https://441135118wz.github.io/accepted/post/2020411/</id>
