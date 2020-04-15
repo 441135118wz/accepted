@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://441135118wz.github.io/accepted</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-04-15T09:47:42.162Z</updated>
+    <updated>2020-04-15T15:04:33.459Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
     <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
@@ -10,12 +10,22 @@
     <icon>https://441135118wz.github.io/accepted/favicon.ico</icon>
     <rights>All rights reserved 2020, ori&apos;s blog</rights>
     <entry>
+        <title type="html"><![CDATA[123]]></title>
+        <id>https://441135118wz.github.io/accepted/post/123/</id>
+        <link href="https://441135118wz.github.io/accepted/post/123/">
+        </link>
+        <updated>2020-04-15T15:04:27.000Z</updated>
+        <content type="html"><![CDATA[<p>123</p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[2020.4.15]]></title>
         <id>https://441135118wz.github.io/accepted/post/2020415/</id>
         <link href="https://441135118wz.github.io/accepted/post/2020415/">
         </link>
         <updated>2020-04-15T09:32:14.000Z</updated>
-        <content type="html"><![CDATA[<p>第一次知道一本通tm有交题数量上限。</p>
+        <content type="html"><![CDATA[<p>第一次知道一本通tm有交题数量上限。<br>
+一本通算法提高中的</p>
 ]]></content>
     </entry>
     <entry>
