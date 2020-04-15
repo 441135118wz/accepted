@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://441135118wz.github.io/accepted</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-04-15T15:04:33.459Z</updated>
+    <updated>2020-04-15T15:13:14.138Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
     <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
@@ -24,8 +24,12 @@
         <link href="https://441135118wz.github.io/accepted/post/2020415/">
         </link>
         <updated>2020-04-15T09:32:14.000Z</updated>
-        <content type="html"><![CDATA[<p>第一次知道一本通tm有交题数量上限。<br>
-一本通算法提高中的</p>
+        <content type="html"><![CDATA[<p>第一次知道一本通tm有交题数量上限。</p>
+<p>今天早上学习<strong>莫队</strong>，<strong>莫队</strong>可以用<strong>分块加速</strong>。</p>
+<h5 id="莫队思想">莫队思想：</h5>
+<pre><code>先记录询问，然后根据左右指针排序，最后用暴力求解。
+</code></pre>
+<p>一本通 <strong>算法提高</strong>中的题目要复习。</p>
 ]]></content>
     </entry>
     <entry>
