@@ -2,13 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://441135118wz.github.io/accepted</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-04-15T15:16:36.000Z</updated>
+    <updated>2020-04-18T08:59:26.147Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
     <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
     <logo>https://441135118wz.github.io/accepted/images/avatar.png</logo>
     <icon>https://441135118wz.github.io/accepted/favicon.ico</icon>
     <rights>All rights reserved 2020, ori&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[2020.4.17]]></title>
+        <id>https://441135118wz.github.io/accepted/post/2020417/</id>
+        <link href="https://441135118wz.github.io/accepted/post/2020417/">
+        </link>
+        <updated>2020-04-18T08:59:07.000Z</updated>
+        <content type="html"><![CDATA[<p>水一本通，复习最短路和生成树。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2020.4.16]]></title>
+        <id>https://441135118wz.github.io/accepted/post/2020416/</id>
+        <link href="https://441135118wz.github.io/accepted/post/2020416/">
+        </link>
+        <updated>2020-04-18T08:58:22.000Z</updated>
+        <content type="html"><![CDATA[<p>水一本通</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2020.4.15]]></title>
         <id>https://441135118wz.github.io/accepted/post/2020415/</id>
