@@ -2,104 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://441135118wz.github.io/accepted</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-04-18T08:59:26.147Z</updated>
+    <updated>2020-06-25T04:23:43.868Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
     <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
     <logo>https://441135118wz.github.io/accepted/images/avatar.png</logo>
     <icon>https://441135118wz.github.io/accepted/favicon.ico</icon>
     <rights>All rights reserved 2020, ori&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[2020.4.17]]></title>
-        <id>https://441135118wz.github.io/accepted/post/2020417/</id>
-        <link href="https://441135118wz.github.io/accepted/post/2020417/">
-        </link>
-        <updated>2020-04-18T08:59:07.000Z</updated>
-        <content type="html"><![CDATA[<p>水一本通，复习最短路和生成树。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.4.16]]></title>
-        <id>https://441135118wz.github.io/accepted/post/2020416/</id>
-        <link href="https://441135118wz.github.io/accepted/post/2020416/">
-        </link>
-        <updated>2020-04-18T08:58:22.000Z</updated>
-        <content type="html"><![CDATA[<p>水一本通</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.4.15]]></title>
-        <id>https://441135118wz.github.io/accepted/post/2020415/</id>
-        <link href="https://441135118wz.github.io/accepted/post/2020415/">
-        </link>
-        <updated>2020-04-15T09:32:14.000Z</updated>
-        <content type="html"><![CDATA[<p>第一次知道一本通tm有交题数量上限。</p>
-<p>今天早上学习<strong>莫队</strong>，<strong>莫队</strong>可以用<strong>分块加速</strong>。</p>
-<h5 id="莫队思想">莫队思想：</h5>
-<pre><code>先记录询问，然后根据左右指针排序，最后用暴力求解。
-</code></pre>
-<p>一本通 <strong>算法提高</strong>中的题目要复习。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.4.14]]></title>
-        <id>https://441135118wz.github.io/accepted/post/2020414/</id>
-        <link href="https://441135118wz.github.io/accepted/post/2020414/">
-        </link>
-        <updated>2020-04-14T09:08:09.000Z</updated>
-        <content type="html"><![CDATA[<p>学习fft，要复习迭代。下午水一本通。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.4.13]]></title>
-        <id>https://441135118wz.github.io/accepted/post/2020413/</id>
-        <link href="https://441135118wz.github.io/accepted/post/2020413/">
-        </link>
-        <updated>2020-04-14T09:07:46.000Z</updated>
-        <content type="html"><![CDATA[<p>水一本通。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.4.12]]></title>
-        <id>https://441135118wz.github.io/accepted/post/2020412/</id>
-        <link href="https://441135118wz.github.io/accepted/post/2020412/">
-        </link>
-        <updated>2020-04-12T08:42:50.000Z</updated>
-        <content type="html"><![CDATA[<p>P1502 窗口的星星  扫描线类模板题</p>
-<p>P4588 [TJOI2018]数学计算 线段树题</p>
-<p>P1168 中位数 用stl（vector）很简单</p>
-<p>P1128 [HNOI2001]求正整数  搜索题</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.4.11]]></title>
-        <id>https://441135118wz.github.io/accepted/post/2020411/</id>
-        <link href="https://441135118wz.github.io/accepted/post/2020411/">
-        </link>
-        <updated>2020-04-11T14:22:18.000Z</updated>
-        <content type="html"><![CDATA[<p>做了几道树状数组题<br>
-P4514 上帝造题的七分钟这题要用到二维树状数组<br>
-明天了解一下sg函数和树剖，做一下线段树的题，早上尽量做一下提高模拟赛。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.4.10]]></title>
-        <id>https://441135118wz.github.io/accepted/post/2020410/</id>
-        <link href="https://441135118wz.github.io/accepted/post/2020410/">
-        </link>
-        <updated>2020-04-10T13:59:44.000Z</updated>
-        <content type="html"><![CDATA[<p>水生成树的题，巩固最短路，明天刷线段树题，学树剖。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[2020.4.9]]></title>
-        <id>https://441135118wz.github.io/accepted/post/202049/</id>
-        <link href="https://441135118wz.github.io/accepted/post/202049/">
-        </link>
-        <updated>2020-04-09T14:45:32.000Z</updated>
-        <content type="html"><![CDATA[<p>今天的pj模拟赛是4道倍增。<br>
-<a href="https://www.luogu.com.cn/blog/crpboy/solution-birthday">模拟赛题解</a><br>
-水最小生成树题，然后写挂了，迷之re，明天再康康。</p>
-]]></content>
-    </entry>
 </feed>
