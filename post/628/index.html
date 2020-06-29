@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://441135118wz.github.io/accepted/favicon.ico?v=1593340677255">
+<link rel="shortcut icon" href="https://441135118wz.github.io/accepted/favicon.ico?v=1593390080058">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://441135118wz.github.io/accepted/styles/main.css">
 
@@ -36,7 +36,7 @@
   <div class="site-header">
     <div class="left">
       <a href="https://441135118wz.github.io/accepted">
-        <img class="avatar" src="https://441135118wz.github.io/accepted/images/avatar.png?v=1593340677255" alt="" width="32px" height="32px">
+        <img class="avatar" src="https://441135118wz.github.io/accepted/images/avatar.png?v=1593390080058" alt="" width="32px" height="32px">
       </a>
       <a href="https://441135118wz.github.io/accepted">
         <h1 class="site-title">ori&#39;s blog</h1>
@@ -80,14 +80,23 @@
             
           </div>
           <div class="post-content">
-            <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>c</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">lca</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">c</span><span class="mord mathdefault">a</span></span></span></span> 流程</p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>f</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">dfs</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">s</span></span></span></span>:</p>
+            <h1 id="lca">LCA</h1>
+<h3 id="dfs"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>f</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">dfs</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">s</span></span></span></span>:</h3>
 <ol>
-<li>现在的节点的上面一个节点是它的父亲，节点的深度是他父亲的深度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">+</span><span class="mord">1</span></span></span></span></li>
-<li>预处理，这个节点的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span>个祖先。</li>
-<li>递归遍历图。</li>
+<li>
+<p>现在的节点的上面一个节点是它的父亲，节点的深度是他父亲的深度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">+</span><span class="mord">1</span></span></span></span></p>
+</li>
+<li>
+<p>预处理，这个节点的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span></span></span>个祖先。</p>
+<pre><code class="language-cpp">for (int i = 1; i &lt;= lg[depth[now]]; ++i)
+        fa[now][i] = fa[fa[now][i-1]][i-1];
+</code></pre>
+</li>
+<li>
+<p>递归遍历图。</p>
+</li>
 </ol>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>C</mi><mi>A</mi><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">LCA(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault">A</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>:</p>
+<h3 id="lcaxy"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>C</mi><mi>A</mi><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">LCA(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault">A</span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>:</h3>
 <ol>
 <li>
 <p>如果 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 的深度比 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> 浅，就交换，确保 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 比 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> 深。</p>
@@ -95,6 +104,11 @@
 <li>
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 一直跳到和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> 深度相同的时候。</p>
 </li>
+</ol>
+<pre><code class="language-c++">while(depth[x] &gt; depth[y])
+        x=fa[x][lg[depth[x]-depth[y]]-1];
+</code></pre>
+<ol start="3">
 <li>
 <p>如果 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> 是同一个节点，就直接 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi><mi>e</mi><mi>t</mi><mi>u</mi><mi>r</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">return</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">t</span><span class="mord mathdefault">u</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">n</span></span></span></span> 。</p>
 </li>
@@ -105,8 +119,10 @@
 			x = fa[x][k], y = fa[y][k];
 </code></pre>
 </li>
+<li>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi><mi>e</mi><mi>t</mi><mi>u</mi><mi>r</mi><mi>n</mi><mtext> </mtext><mi>f</mi><mi>a</mi><mo>[</mo><mi>x</mi><mo>]</mo><mo>[</mo><mn>0</mn><mo>]</mo></mrow><annotation encoding="application/x-tex">return\ fa[x][0]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">t</span><span class="mord mathdefault">u</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">n</span><span class="mspace"> </span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">a</span><span class="mopen">[</span><span class="mord mathdefault">x</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord">0</span><span class="mclose">]</span></span></span></span></p>
+</li>
 </ol>
-<p>完。</p>
 
           </div>
         </div>
