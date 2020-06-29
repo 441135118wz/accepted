@@ -2,13 +2,84 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://441135118wz.github.io/accepted</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-06-29T06:44:28.996Z</updated>
+    <updated>2020-06-29T12:00:52.643Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
     <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
     <logo>https://441135118wz.github.io/accepted/images/avatar.png</logo>
     <icon>https://441135118wz.github.io/accepted/favicon.ico</icon>
     <rights>All rights reserved 2020, ori&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[左偏树]]></title>
+        <id>https://441135118wz.github.io/accepted/post/zuo-pian-shu/</id>
+        <link href="https://441135118wz.github.io/accepted/post/zuo-pian-shu/">
+        </link>
+        <updated>2020-06-29T12:00:43.000Z</updated>
+        <content type="html"><![CDATA[<p>#include &lt;bits/stdc++.h&gt;<br>
+using namespace std;<br>
+const int maxn = 100010;<br>
+int n, m, op, x, y;<br>
+int lson[maxn], rson[maxn], dist[maxn], fa[maxn];<br>
+bool tf[maxn];<br>
+struct node{<br>
+int id, v;<br>
+bool operator&lt;(node x) const {<br>
+return v == x.v ? id &lt; x.id : v &lt; x.v;<br>
+}<br>
+} v[maxn];<br>
+int find(int x){<br>
+return fa[x] == x ? x : fa[x] = find(fa[x]);<br>
+}<br>
+int merge(int x, int y){<br>
+if (!x || !y)<br>
+return x + y;<br>
+if (v[y] &lt; v[x])<br>
+swap(x, y);<br>
+rson[x] = merge(rson[x], y);<br>
+if (dist[lson[x]] &lt; dist[rson[x]])<br>
+swap(lson[x], rson[x]);<br>
+dist[x] = dist[rson[x]] + 1;<br>
+return x;<br>
+}<br>
+int main()<br>
+{<br>
+dist[0] = -1;<br>
+read(n);<br>
+read(m);<br>
+For(i,1,n)<br>
+read(v[i].v), fa[i] = i, v[i].id = i;<br>
+while (m--)<br>
+{<br>
+read(op);<br>
+read(x);<br>
+if (op == 1)<br>
+{<br>
+read(y);<br>
+if (tf[x] || tf[y])<br>
+continue;<br>
+x = find(x);<br>
+y = find(y);<br>
+if (x != y)<br>
+fa[x] = fa[y] = merge(x, y);<br>
+}<br>
+if (op == 2)<br>
+{<br>
+if (tf[x])<br>
+{<br>
+printf(&quot;-1\n&quot;);<br>
+continue;<br>
+}<br>
+x = find(x);<br>
+printf(&quot;%d\n&quot;, v[x].v);<br>
+tf[x] = true;<br>
+fa[lson[x]] = fa[rson[x]] = fa[x] = merge(lson[x], rson[x]);<br>
+lson[x] = rson[x] = dist[x] = 0;<br>
+}<br>
+}<br>
+return 0;<br>
+}</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[struct重载运算符用法]]></title>
         <id>https://441135118wz.github.io/accepted/post/struct-chong-zai-yun-suan-fu-yong-fa/</id>
