@@ -5,7 +5,7 @@
     
 <meta charset="utf-8" >
 
-<title>hello world! | ori&#39;s blog</title>
+<title>struct重载运算符用法 | ori&#39;s blog</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -74,18 +74,43 @@
       <div class="content-container">
         <div class="post-detail">
           
-          <h2 class="post-title">hello world!</h2>
+          <h2 class="post-title">struct重载运算符用法</h2>
           <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2020-06-25</span>
+            <span><i class="icon-calendar-outline"></i> 2020-06-29</span>
             
           </div>
           <div class="post-content">
-            <p>hello world!</p>
+            <p>operator是c++的重载运算符，字面意思，自己理解。</p>
+<p>一般回放在struct结构体当中，可以直接把结构体中的变量用运算符搞，挺方便的。</p>
+<p>重载运算符的格式如下：</p>
+<p>bool operator 运算符 (const 结构体名称 b) const</p>
+<p>{<br>
+return(什么时候这个运算符对结构体成立);//注意对此运算符使用this-&gt;元素名；</p>
+<p>}</p>
+<p>举例</p>
+<pre><code class="language-cpp">struct point
+{
+	    int elem;
+	    bool operator&lt;(point b)const
+    	{
+	    	    return elem&gt;b.elem;
+	    }
+};
+
+</code></pre>
 
           </div>
         </div>
 
         
+          <div class="next-post">
+            <a class="purple-link" href="https://441135118wz.github.io/accepted/post/za-ji/">
+              <h3 class="post-title">
+                下一篇：杂记
+              </h3>
+            </a>
+          </div>
+          
       </div>
 
       
