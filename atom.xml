@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://441135118wz.github.io/accepted</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-06-30T13:12:57.692Z</updated>
+    <updated>2020-06-30T13:19:59.639Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
     <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
@@ -15,9 +15,9 @@
         <link href="https://441135118wz.github.io/accepted/post/stl-zong-jie/">
         </link>
         <updated>2020-06-30T13:12:40.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="迭代器">迭代器：</h1>
+        <content type="html"><![CDATA[<h1 id="迭代器">迭代器</h1>
 <p>迭代器是一个变量，相当于容器和操纵容器的算法之间的中介。迭代器可以指向容器中的某个元素，通过迭代器就可以读写它指向的元素。</p>
-<h1 id="vector">vector：</h1>
+<h1 id="vector">vector</h1>
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>vector</mtext></mrow><annotation encoding="application/x-tex">\text {vector}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord text"><span class="mord">vector</span></span></span></span></span>可以看成是什么都可以放进去的线性表。</p>
 <p>用法：</p>
 <pre><code class="language-cpp">vector&lt;int&gt;v;//vector元素为 int 型  
