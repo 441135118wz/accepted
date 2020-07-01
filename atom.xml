@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://441135118wz.github.io/accepted</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-07-01T13:18:33.098Z</updated>
+    <updated>2020-07-01T13:18:56.545Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
     <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
@@ -17,7 +17,7 @@
         <updated>2020-07-01T13:18:00.000Z</updated>
         <content type="html"><![CDATA[<p>从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 枚举，考虑当前枚举到的位置 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> ，他对总的逆序对的个数的贡献就是他前面的权值大于他的权值的数的个数，所以我们在i的权值的位置修改树状数组，表示 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的权值这个数已经出现过了，那么到了后面就可以直接查询从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的权值的位置的总和。</p>
 <pre><code class="language-cpp">void add(int i,int t){
-    while(i&lt;maxm){//这里和maxm相关，而不是n，因为i是数据而不是a[i]是数据
+    while(i&lt;=n){
         c[i]+=t;
         i+=lowbit(i);
     }
