@@ -1,9 +1,11 @@
+
+<!DOCTYPE html>
 <html>
   <head>
     
 <meta charset="utf-8" >
 
-<title>ori&#39;s blog</title>
+<title>离散化 | ori&#39;s blog</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -14,6 +16,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://441135118wz.github.io/accepted/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -63,15 +71,128 @@
 </transition>
 
 
-        <div class="content-container">
+      <div class="content-container">
+        <div class="post-detail">
           
-          <div class="tags-container">
+          <h2 class="post-title">离散化</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-07-01</span>
             
           </div>
+          <div class="post-content">
+            <p>离散化：</p>
+<pre><code class="language-cpp">For(i,1,n){
+	read(a[i].v);
+    a[i].id=i;
+}
+sort(a+1,a+1+n);按v排序
+For(i,1,n) b[a[i].id]=i;
+</code></pre>
+<p>这是离散化代码。</p>
+<p>我来帮助理解一下：</p>
+<table>
+<thead>
+<tr>
+<th>v</th>
+<th>1005</th>
+<th>12</th>
+<th>234</th>
+<th>5</th>
+<th>3421</th>
+<th>11111</th>
+<th>42</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p>排序过后：</p>
+<table>
+<thead>
+<tr>
+<th>v</th>
+<th>5</th>
+<th>12</th>
+<th>42</th>
+<th>234</th>
+<th>1005</th>
+<th>3421</th>
+<th>11111</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>4</td>
+<td>2</td>
+<td>7</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>最后赋值进b数组</p>
+<table>
+<thead>
+<tr>
+<th>b[1]</th>
+<th>b[2]</th>
+<th>b[3]</th>
+<th>b[4]</th>
+<th>b[5]</th>
+<th>b[6]</th>
+<th>b[7]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>6</td>
+<td>7</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>感性理解一下就很简单了。</p>
 
+          </div>
         </div>
 
-        <div class="site-footer">
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://441135118wz.github.io/accepted/post/stl-zong-jie/">
+              <h3 class="post-title">
+                下一篇：STL总结
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
   <div class="slogan"></div>
   <div class="social-container">
     
@@ -90,8 +211,8 @@
 </div>
 
 
-      </div>
-      <script type="application/javascript">
+    </div>
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
 
@@ -106,7 +227,29 @@ var app = new Vue({
 
 
 
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
 
-    </div>
+      var gitalk = new Gitalk({
+        clientID: '59003c567c14aece22fa',
+        clientSecret: '6b76d3c5e9bfbdecde221c8250472b2a50948823',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>
