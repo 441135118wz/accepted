@@ -5,7 +5,7 @@
     
 <meta charset="utf-8" >
 
-<title>struct重载运算符用法 | ori&#39;s blog</title>
+<title>树状数组求逆序对 | ori&#39;s blog</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -74,29 +74,34 @@
       <div class="content-container">
         <div class="post-detail">
           
-          <h2 class="post-title">struct重载运算符用法</h2>
+          <h2 class="post-title">树状数组求逆序对</h2>
           <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2020-06-29</span>
+            <span><i class="icon-calendar-outline"></i> 2020-07-01</span>
             
           </div>
           <div class="post-content">
-            <p>operator是c++的重载运算符，字面意思，自己理解。</p>
-<p>一般回放在struct结构体当中，可以直接把结构体中的变量用运算符搞，挺方便的。</p>
-<p>重载运算符的格式如下：</p>
-<p>bool operator 运算符 (const 结构体名称 b) const</p>
-<p>{<br>
-return(什么时候这个运算符对结构体成立);//注意对此运算符使用this-&gt;元素名；</p>
-<p>}</p>
-<p>举例</p>
-<pre><code class="language-cpp">struct point
-{
-	    int elem;
-	    bool operator&lt;(point b)const
-    	{
-	    	    return elem&gt;b.elem;
-	    }
-};
-
+            <p>从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 枚举，考虑当前枚举到的位置 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> ，他对总的逆序对的个数的贡献就是他前面的权值大于他的权值的数的个数，所以我们在i的权值的位置修改树状数组，表示i的权值这个数已经出现过了，那么到了后面就可以直接查询从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的权值的位置的总和。</p>
+<pre><code class="language-cpp">void add(int i,int t){
+    while(i&lt;maxm){//这里和maxm相关，而不是n，因为i是数据而不是a[i]是数据
+        c[i]+=t;
+        i+=lowbit(i);
+    }
+}
+int main(){
+    int n;
+    cin&gt;&gt;n;
+    for(int i=1;i&lt;=n;i++){
+        int t;
+        cin&gt;&gt;t;
+        add(t,1);
+        ans+=i-sum(t);
+    }
+    for(int i=1;i&lt;=n;i++){
+        cout&lt;&lt;c[i]&lt;&lt;endl;
+    }
+    cout&lt;&lt;ans&lt;&lt;endl;
+    return 0;
+}
 </code></pre>
 
           </div>
@@ -104,9 +109,9 @@ return(什么时候这个运算符对结构体成立);//注意对此运算符使
 
         
           <div class="next-post">
-            <a class="purple-link" href="https://441135118wz.github.io/accepted/post/za-ji/">
+            <a class="purple-link" href="https://441135118wz.github.io/accepted/post/chi-san-hua/">
               <h3 class="post-title">
-                下一篇：杂记
+                下一篇：离散化
               </h3>
             </a>
           </div>
