@@ -2,13 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://441135118wz.github.io/accepted</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-07-01T13:18:56.545Z</updated>
+    <updated>2020-07-02T02:28:50.835Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
     <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
     <logo>https://441135118wz.github.io/accepted/images/avatar.png</logo>
     <icon>https://441135118wz.github.io/accepted/favicon.ico</icon>
     <rights>All rights reserved 2020, ori&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[P1637 三元上升子序列 题解]]></title>
+        <id>https://441135118wz.github.io/accepted/post/p1637-san-yuan-shang-sheng-zi-xu-lie-ti-jie/</id>
+        <link href="https://441135118wz.github.io/accepted/post/p1637-san-yuan-shang-sheng-zi-xu-lie-ti-jie/">
+        </link>
+        <updated>2020-07-02T02:28:36.000Z</updated>
+        <content type="html"><![CDATA[<p>题目传送门：<a href="https://www.luogu.com.cn/problem/P1637">三元上升子序列</a></p>
+<p>这道题先需要想到一个结论，就是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mi>n</mi><mi>s</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>∗</mo><mo>(</mo><mi>a</mi><mo>[</mo><mi>i</mi><mo>]</mo><mi mathvariant="normal">左</mi><mi mathvariant="normal">边</mi><mi mathvariant="normal">比</mi><mi mathvariant="normal">他</mi><mi mathvariant="normal">小</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">数</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">数</mi><mi mathvariant="normal">量</mi><mo>)</mo><mo>∗</mo><mi>a</mi><mo>[</mo><mi>i</mi><mo>]</mo><mi mathvariant="normal">右</mi><mi mathvariant="normal">边</mi><mi mathvariant="normal">比</mi><mi mathvariant="normal">他</mi><mi mathvariant="normal">大</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">数</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">数</mi><mi mathvariant="normal">量</mi></mrow><annotation encoding="application/x-tex">ans=\sum_{i=1}^{n}*(a[i]左边比他小的数的数量)*a[i]右边比他大的数的数量</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.104002em;vertical-align:-0.29971000000000003em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">∗</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mord cjk_fallback">左</span><span class="mord cjk_fallback">边</span><span class="mord cjk_fallback">比</span><span class="mord cjk_fallback">他</span><span class="mord cjk_fallback">小</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">量</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">a</span><span class="mopen">[</span><span class="mord mathdefault">i</span><span class="mclose">]</span><span class="mord cjk_fallback">右</span><span class="mord cjk_fallback">边</span><span class="mord cjk_fallback">比</span><span class="mord cjk_fallback">他</span><span class="mord cjk_fallback">大</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">量</span></span></span></span>。</p>
+<p>就可以先离散化再2次树状数组就好了。</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+#define ll long long
+using namespace std;
+int a[200005],b[200005],ans;
+int fuck1[200005],fuck2[200005],n,len;
+int Left[200005],Right[200005];//开小数组见祖宗 
+inline int lowbit(int x){return x&amp;-x;}
+inline int add1(int x){for(int i=x;i&lt;=len;i+=lowbit(i))fuck1[i]++;}
+inline int add2(int x){for(int i=x;i&lt;=len;i+=lowbit(i))fuck2[i]++;}
+inline int ask1(int x){int sum=0;for(int i=x;i;i-=lowbit(i)){sum+=fuck1[i];} return sum;}
+inline int ask2(int x){int sum=0;for(int i=x;i;i-=lowbit(i)){sum+=fuck2[i];} return sum;}
+signed main() {
+    freopen(&quot;T2.in&quot;,&quot;r&quot;,stdin);
+    freopen(&quot;T2.out&quot;,&quot;w&quot;,stdout);
+	read(n);
+	For(i,1,n)read(a[i]),b[i]=a[i];
+	
+    sort(b+1,b+n+1);
+	len=unique(b+1,b+n+1)-b-1;
+	For(i,1,n) a[i]=lower_bound(b+1,b+len+1,a[i])-b;//离散化
+
+	For(i,1,n) add1(a[i]),Left[i]=ask1(a[i]-1);
+	for(int i=n;i&gt;=1;--i) add2(a[i]),Right[i]=ask2(len)-ask2(a[i]);
+    
+	For(i,1,n) ans+=Left[i]*Right[i];
+	write(ans);
+    return 0;
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[树状数组求逆序对]]></title>
         <id>https://441135118wz.github.io/accepted/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/</id>
@@ -17,7 +57,7 @@
         <updated>2020-07-01T13:18:00.000Z</updated>
         <content type="html"><![CDATA[<p>从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 枚举，考虑当前枚举到的位置 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> ，他对总的逆序对的个数的贡献就是他前面的权值大于他的权值的数的个数，所以我们在i的权值的位置修改树状数组，表示 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的权值这个数已经出现过了，那么到了后面就可以直接查询从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的权值的位置的总和。</p>
 <pre><code class="language-cpp">void add(int i,int t){
-    while(i&lt;=n){
+    while(i&lt;=len){//这里的len是元素种类，具体见上一篇博客
         c[i]+=t;
         i+=lowbit(i);
     }
@@ -53,6 +93,11 @@ int main(){
 }
 sort(a+1,a+1+n);按v排序
 For(i,1,n) b[a[i].id]=i;
+</code></pre>
+<pre><code class="language-cpp">For(i,1,n)read(a[i]),b[i]=a[i];
+ sort(b+1,b+n+1);
+len=unique(b+1,b+n+1)-b-1;
+For(i,1,n) a[i]=lower_bound(b+1,b+len+1,a[i])-b;
 </code></pre>
 <p>这是离散化代码。</p>
 <p>我来帮助理解一下：</p>
