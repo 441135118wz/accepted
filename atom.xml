@@ -2,13 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://441135118wz.github.io/accepted</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-07-02T12:21:08.133Z</updated>
+    <updated>2020-07-05T07:12:30.706Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
     <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
     <logo>https://441135118wz.github.io/accepted/images/avatar.png</logo>
     <icon>https://441135118wz.github.io/accepted/favicon.ico</icon>
     <rights>All rights reserved 2020, ori&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[to do!]]></title>
+        <id>https://441135118wz.github.io/accepted/post/to-do/</id>
+        <link href="https://441135118wz.github.io/accepted/post/to-do/">
+        </link>
+        <updated>2020-07-05T07:11:11.000Z</updated>
+        <content type="html"><![CDATA[<ol>
+<li>DP</li>
+<li>树上差分</li>
+<li>线段树</li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[P3147题解]]></title>
         <id>https://441135118wz.github.io/accepted/post/p3147-ti-jie/</id>
@@ -760,15 +773,6 @@ return(什么时候这个运算符对结构体成立);//注意对此运算符使
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi><mi>e</mi><mi>t</mi><mi>u</mi><mi>r</mi><mi>n</mi><mtext> </mtext><mi>f</mi><mi>a</mi><mo>[</mo><mi>x</mi><mo>]</mo><mo>[</mo><mn>0</mn><mo>]</mo></mrow><annotation encoding="application/x-tex">return\ fa[x][0]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">e</span><span class="mord mathdefault">t</span><span class="mord mathdefault">u</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">n</span><span class="mspace"> </span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault">a</span><span class="mopen">[</span><span class="mord mathdefault">x</span><span class="mclose">]</span><span class="mopen">[</span><span class="mord">0</span><span class="mclose">]</span></span></span></span></p>
 </li>
 </ol>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[hello world!]]></title>
-        <id>https://441135118wz.github.io/accepted/post/hello-world/</id>
-        <link href="https://441135118wz.github.io/accepted/post/hello-world/">
-        </link>
-        <updated>2020-06-25T04:23:58.000Z</updated>
-        <content type="html"><![CDATA[<p>hello world!</p>
 ]]></content>
     </entry>
 </feed>
