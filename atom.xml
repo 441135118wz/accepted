@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://441135118wz.github.io/accepted</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-07-08T11:58:13.756Z</updated>
+    <updated>2020-07-08T12:03:58.665Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
     <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
@@ -21,7 +21,10 @@
 <p>T1没有原题，，题意说的还是很清楚，但是考试的时候没有想到用2分。。</p>
 <p>这题是2分答案，就是二分需要的天数，只要想到思路，代码还是很短的。</p>
 <p>启示：一般让你求最小的答案都可以往二分这方面去想想。</p>
-<p>分析也很难说，看代码理解一下就好了</p>
+<p>都弄成中位数还是很好证明的，也很常见。</p>
+<p>这里先介绍一个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>STL</mtext></mrow><annotation encoding="application/x-tex">\text{STL}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">STL</span></span></span></span></span> : <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mi>t</mi><mi>h</mi><mi mathvariant="normal">_</mi><mi>e</mi><mi>l</mi><mi>e</mi><mi>m</mi><mi>e</mi><mi>n</mi><mi>t</mi><mo>(</mo><mi>b</mi><mo>+</mo><mn>1</mn><mo separator="true">,</mo><mi>b</mi><mo>+</mo><mi>m</mi><mi>i</mi><mi>d</mi><mo separator="true">,</mo><mi>b</mi><mo>+</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo separator="true">;</mo></mrow><annotation encoding="application/x-tex">nth\_element(b+1,b+mid,b+n+1);</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.06em;vertical-align:-0.31em;"></span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord mathdefault">h</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">e</span><span class="mord mathdefault">m</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mopen">(</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mpunct">;</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>o</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">o(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">o</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>找中位数，还是挺好用的。</p>
+<p>分析也很难说（更主要是懒），看代码理解一下就好了</p>
 <pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
 using namespace std;
 ll n,q[500005],b[500005];
@@ -105,7 +108,6 @@ int main(){
 signed main(){
 	freopen(&quot;taxes.in&quot;,&quot;r&quot;,stdin);
 	freopen(&quot;taxes.out&quot;,&quot;w&quot;,stdout);
-	srand(time(0));
 	int T;
 	ll q,ans=0;
 	T=read();
