@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://441135118wz.github.io/accepted</id>
+    <id>https://accepted.top</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-07-09T05:45:48.302Z</updated>
+    <updated>2020-07-18T15:36:39.430Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://441135118wz.github.io/accepted"/>
-    <link rel="self" href="https://441135118wz.github.io/accepted/atom.xml"/>
-    <logo>https://441135118wz.github.io/accepted/images/avatar.png</logo>
-    <icon>https://441135118wz.github.io/accepted/favicon.ico</icon>
+    <link rel="alternate" href="https://accepted.top"/>
+    <link rel="self" href="https://accepted.top/atom.xml"/>
+    <logo>https://accepted.top/images/avatar.png</logo>
+    <icon>https://accepted.top/favicon.ico</icon>
     <rights>All rights reserved 2020, ori&apos;s blog</rights>
     <entry>
         <title type="html"><![CDATA[7.8模拟赛题解]]></title>
-        <id>https://441135118wz.github.io/accepted/post/78-mo-ni-sai-ti-jie/</id>
-        <link href="https://441135118wz.github.io/accepted/post/78-mo-ni-sai-ti-jie/">
+        <id>https://accepted.top/post/78-mo-ni-sai-ti-jie/</id>
+        <link href="https://accepted.top/post/78-mo-ni-sai-ti-jie/">
         </link>
         <updated>2020-07-08T11:49:51.000Z</updated>
         <content type="html"><![CDATA[<p>一场爆0模拟赛的垃圾题解。</p>
@@ -128,8 +128,8 @@ signed main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[KMP算法学习小结]]></title>
-        <id>https://441135118wz.github.io/accepted/post/kmp-suan-fa-xue-xi-xiao-jie/</id>
-        <link href="https://441135118wz.github.io/accepted/post/kmp-suan-fa-xue-xi-xiao-jie/">
+        <id>https://accepted.top/post/kmp-suan-fa-xue-xi-xiao-jie/</id>
+        <link href="https://accepted.top/post/kmp-suan-fa-xue-xi-xiao-jie/">
         </link>
         <updated>2020-07-07T12:07:36.000Z</updated>
         <content type="html"><![CDATA[<h3 id="前言">前言</h3>
@@ -196,21 +196,21 @@ signed main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[to do!]]></title>
-        <id>https://441135118wz.github.io/accepted/post/to-do/</id>
-        <link href="https://441135118wz.github.io/accepted/post/to-do/">
+        <id>https://accepted.top/post/to-do/</id>
+        <link href="https://accepted.top/post/to-do/">
         </link>
         <updated>2020-07-05T07:11:11.000Z</updated>
         <content type="html"><![CDATA[<ol>
 <li>DP</li>
-<li>树上差分</li>
 <li>线段树</li>
+<li>网络流</li>
 </ol>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[P3147题解]]></title>
-        <id>https://441135118wz.github.io/accepted/post/p3147-ti-jie/</id>
-        <link href="https://441135118wz.github.io/accepted/post/p3147-ti-jie/">
+        <id>https://accepted.top/post/p3147-ti-jie/</id>
+        <link href="https://accepted.top/post/p3147-ti-jie/">
         </link>
         <updated>2020-07-02T12:20:50.000Z</updated>
         <content type="html"><![CDATA[<p>题目传送门：<a href="https://www.luogu.com.cn/problem/P3147">P3147</a></p>
@@ -243,8 +243,8 @@ signed main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[P1637 三元上升子序列 题解]]></title>
-        <id>https://441135118wz.github.io/accepted/post/p1637-san-yuan-shang-sheng-zi-xu-lie-ti-jie/</id>
-        <link href="https://441135118wz.github.io/accepted/post/p1637-san-yuan-shang-sheng-zi-xu-lie-ti-jie/">
+        <id>https://accepted.top/post/p1637-san-yuan-shang-sheng-zi-xu-lie-ti-jie/</id>
+        <link href="https://accepted.top/post/p1637-san-yuan-shang-sheng-zi-xu-lie-ti-jie/">
         </link>
         <updated>2020-07-02T02:28:36.000Z</updated>
         <content type="html"><![CDATA[<p>题目传送门：<a href="https://www.luogu.com.cn/problem/P1637">三元上升子序列</a></p>
@@ -283,8 +283,8 @@ signed main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[树状数组求逆序对]]></title>
-        <id>https://441135118wz.github.io/accepted/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/</id>
-        <link href="https://441135118wz.github.io/accepted/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/">
+        <id>https://accepted.top/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/</id>
+        <link href="https://accepted.top/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/">
         </link>
         <updated>2020-07-01T13:18:00.000Z</updated>
         <content type="html"><![CDATA[<p>从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 枚举，考虑当前枚举到的位置 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> ，他对总的逆序对的个数的贡献就是他前面的权值大于他的权值的数的个数，所以我们在i的权值的位置修改树状数组，表示 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的权值这个数已经出现过了，那么到了后面就可以直接查询从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的权值的位置的总和。</p>
@@ -314,8 +314,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[离散化]]></title>
-        <id>https://441135118wz.github.io/accepted/post/chi-san-hua/</id>
-        <link href="https://441135118wz.github.io/accepted/post/chi-san-hua/">
+        <id>https://accepted.top/post/chi-san-hua/</id>
+        <link href="https://accepted.top/post/chi-san-hua/">
         </link>
         <updated>2020-07-01T12:36:26.000Z</updated>
         <content type="html"><![CDATA[<p>离散化：</p>
@@ -416,8 +416,8 @@ For(i,1,n) a[i]=lower_bound(b+1,b+len+1,a[i])-b;
     </entry>
     <entry>
         <title type="html"><![CDATA[STL总结]]></title>
-        <id>https://441135118wz.github.io/accepted/post/stl-zong-jie/</id>
-        <link href="https://441135118wz.github.io/accepted/post/stl-zong-jie/">
+        <id>https://accepted.top/post/stl-zong-jie/</id>
+        <link href="https://accepted.top/post/stl-zong-jie/">
         </link>
         <updated>2020-06-30T13:12:40.000Z</updated>
         <content type="html"><![CDATA[<h1 id="迭代器">迭代器</h1>
@@ -756,8 +756,8 @@ int main(){
     </entry>
     <entry>
         <title type="html"><![CDATA[左偏树]]></title>
-        <id>https://441135118wz.github.io/accepted/post/zuo-pian-shu/</id>
-        <link href="https://441135118wz.github.io/accepted/post/zuo-pian-shu/">
+        <id>https://accepted.top/post/zuo-pian-shu/</id>
+        <link href="https://accepted.top/post/zuo-pian-shu/">
         </link>
         <updated>2020-06-29T12:00:43.000Z</updated>
         <content type="html"><![CDATA[<p>左偏树</p>
@@ -851,8 +851,8 @@ int main()
     </entry>
     <entry>
         <title type="html"><![CDATA[struct重载运算符用法]]></title>
-        <id>https://441135118wz.github.io/accepted/post/struct-chong-zai-yun-suan-fu-yong-fa/</id>
-        <link href="https://441135118wz.github.io/accepted/post/struct-chong-zai-yun-suan-fu-yong-fa/">
+        <id>https://accepted.top/post/struct-chong-zai-yun-suan-fu-yong-fa/</id>
+        <link href="https://accepted.top/post/struct-chong-zai-yun-suan-fu-yong-fa/">
         </link>
         <updated>2020-06-29T06:43:30.000Z</updated>
         <content type="html"><![CDATA[<p>operator是c++的重载运算符，字面意思，自己理解。</p>
