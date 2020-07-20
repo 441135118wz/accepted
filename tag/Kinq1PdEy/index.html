@@ -1,231 +1,304 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>算法 | ori&#39;s blog</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="shortcut icon" href="https://accepted.top/favicon.ico?v=1595236934839">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://accepted.top/favicon.ico?v=1595236767026">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://accepted.top/styles/main.css">
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171805243-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-171805243-1');
-</script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://accepted.top">
-        <img class="avatar" src="https://accepted.top/images/avatar.png?v=1595236767026" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://accepted.top">
-        <h1 class="site-title">ori&#39;s blog</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://accepted.top">ori&#39;s blog</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="https://441135118wz.github.io/accepted" class="menu">
+                主页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="https://441135118wz.github.io/accepted/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+      </ul>
     </div>
   </div>
-</div>
+</nav>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <h2 class="current-tag">标签: 算法</h2>
+          
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://accepted.top/post/kmp-suan-fa-xue-xi-xiao-jie/">KMP算法学习小结</a>
+    </h2>
+    <p class="article-meta">
+      2020-07-07
       
-        
-          <a href="https://441135118wz.github.io/accepted" class="menu purple-link">
-            主页
-          </a>
-        
+        <a href="https://accepted.top/tag/Kinq1PdEy/" class="badge success">
+          算法
+        </a>
       
-        
-          <a href="https://441135118wz.github.io/accepted/tags" class="menu purple-link">
-            标签
-          </a>
-        
+    </p>
+    <p class="text-lead">
       
+    </p>
+    <div class="row">
+      <a href="https://accepted.top/post/kmp-suan-fa-xue-xi-xiao-jie/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
     </div>
-  </div>
-</transition>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://accepted.top/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/">树状数组求逆序对</a>
+    </h2>
+    <p class="article-meta">
+      2020-07-01
+      
+        <a href="https://accepted.top/tag/Kinq1PdEy/" class="badge secondary">
+          算法
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://accepted.top/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://accepted.top/post/zuo-pian-shu/">左偏树</a>
+    </h2>
+    <p class="article-meta">
+      2020-06-29
+      
+        <a href="https://accepted.top/tag/Kinq1PdEy/" class="badge secondary">
+          算法
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://accepted.top/post/zuo-pian-shu/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://accepted.top/post/628/">lca复习小结（代码实现）</a>
+    </h2>
+    <p class="article-meta">
+      2020-06-28
+      
+        <a href="https://accepted.top/tag/Kinq1PdEy/" class="badge secondary">
+          算法
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://accepted.top/post/628/" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
 
 
-      <div class="content-container">
-
-        <div class="current-tag-container">
-          <h2 class="title">
-            <i class="icon icon-pricetags-outline"></i> 算法
-          </h2> 
         </div>
-
-        
-<section class="post-item">
-    <div class="content">
-      <a href="https://accepted.top/post/kmp-suan-fa-xue-xi-xiao-jie/">
-        <h2 class="post-title">KMP算法学习小结</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-07-07</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://accepted.top/tag/Kinq1PdEy/">
-                算法
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://accepted.top/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/">
-        <h2 class="post-title">树状数组求逆序对</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-07-01</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://accepted.top/tag/Kinq1PdEy/">
-                算法
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://accepted.top/post/zuo-pian-shu/">
-        <h2 class="post-title">左偏树</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-06-29</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://accepted.top/tag/Kinq1PdEy/">
-                算法
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://accepted.top/post/628/">
-        <h2 class="post-title">lca复习小结（代码实现）</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-06-28</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://accepted.top/tag/Kinq1PdEy/">
-                算法
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-
-<div class="pagination-container">
+        <div class="row flex-edges">
   
   
 </div>
 
-
       </div>
-
-      <div class="site-footer">
-  <div class="slogan"></div>
-  <div class="social-container">
-    
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://accepted.top/images/avatar.png?v=1595236934839" class="no-responsive avatar">
+    <div class="text-muted"></div>
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
   </div>
-   | <a class="rss" href="https://accepted.top/atom.xml" target="_blank">RSS</a>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://accepted.top/post/78-mo-ni-sai-ti-jie/">7.8模拟赛题解</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://accepted.top/post/78-mo-ni-sai-ti-mu/">7.8模拟赛题目</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://accepted.top/post/kmp-suan-fa-xue-xi-xiao-jie/">KMP算法学习小结</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://accepted.top/post/to-do/">to do!</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://accepted.top/post/p3147-ti-jie/">P3147题解</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://accepted.top/post/p1637-san-yuan-shang-sheng-zi-xu-lie-ti-jie/">P1637 三元上升子序列 题解</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://accepted.top/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/">树状数组求逆序对</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://accepted.top/post/chi-san-hua/">离散化</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://accepted.top/post/stl-zong-jie/">STL总结</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://accepted.top/post/zuo-pian-shu/">左偏树</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://accepted.top/tag/0thlLZtiF/" class="badge success">
+          题解
+        </a>
+      
+        <a href="https://accepted.top/tag/Kinq1PdEy/" class="badge ">
+          算法
+        </a>
+      
+        <a href="https://accepted.top/tag/GmrWV3n3H/" class="badge warning">
+          杂
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+     | <a class="rss" href="https://accepted.top/atom.xml" target="_blank">RSS</a>
+  </div>
 </div>
 
-
     </div>
-    <script type="application/javascript">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 
