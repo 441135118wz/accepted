@@ -4,14 +4,11 @@
     <meta charset="utf-8" >
 
 <title>左偏树 | ori&#39;s blog</title>
-<meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://accepted.top/favicon.ico?v=1595236934839">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://accepted.top/favicon.ico?v=1595237095106">
 <link rel="stylesheet" href="https://accepted.top/styles/main.css">
 
 
@@ -21,67 +18,81 @@
 
   
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
+
+    <meta name="description" content="左偏树
+核心：merge函数
+思想：
+左偏树的合并是一个递归过程，对于以 xxx 和 yyy 为根的树：
+如果 xxx 和 yyy 二者之一为空树，则返回另一棵。
+如果 xxx 和 yyy 均不为空，则比较 xxx 和 yyy 的权值大小。..." />
+    <meta name="keywords" content="算法" />
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://accepted.top">ori&#39;s blog</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://accepted.top">
+        <img src="https://accepted.top/images/avatar.png?v=1595237095106" class="site-logo">
+        <h1 class="site-title">ori&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="https://441135118wz.github.io/accepted" class="menu">
-                主页
-              </a>
-            
-          </li>
+          <a href="https://441135118wz.github.io/accepted" class="site-nav">
+            主页
+          </a>
         
-          <li>
-            
-              <a href="https://441135118wz.github.io/accepted/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+      
         
-      </ul>
+          <a href="https://441135118wz.github.io/accepted/tags" class="site-nav">
+            标签
+          </a>
+        
+      
     </div>
   </div>
-</nav>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+       | <a class="rss" href="https://accepted.top/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>左偏树</h1>
-            <p class="article-meta">
-              2020-06-29
-              
-                <a href="https://accepted.top/tag/Kinq1PdEy/" class="badge success">
-                  算法
-                </a>
-              
-            </p>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">左偏树</h2>
+            <div class="post-date">2020-06-29</div>
             
-            <div class="post-content">
+            <div class="post-content" v-pre>
               <p>左偏树</p>
 <p>核心：merge函数</p>
 <p>思想：</p>
@@ -171,166 +182,55 @@ int main()
 </code></pre>
 
             </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
+            
+              <div class="tag-container">
+                
+                  <a href="https://accepted.top/tag/Kinq1PdEy/" class="tag">
+                    算法
+                  </a>
+                
               </div>
-              <a href="https://accepted.top/post/struct-chong-zai-yun-suan-fu-yong-fa/">
-                <h3 class="post-title">
-                  struct重载运算符用法
-                </h3>
-              </a>
-            </div>
-          
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://accepted.top/post/struct-chong-zai-yun-suan-fu-yong-fa/">
+                  <h3 class="post-title">
+                    struct重载运算符用法
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
         </div>
-        
-          
-            <div class="paper" data-aos="fade-in">
-              <div id="gitalk-container"></div>
-            </div>
-          
-
-          
-        
       </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://accepted.top/images/avatar.png?v=1595236934839" class="no-responsive avatar">
-    <div class="text-muted"></div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://accepted.top/post/78-mo-ni-sai-ti-jie/">7.8模拟赛题解</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://accepted.top/post/78-mo-ni-sai-ti-mu/">7.8模拟赛题目</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://accepted.top/post/kmp-suan-fa-xue-xi-xiao-jie/">KMP算法学习小结</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://accepted.top/post/to-do/">to do!</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://accepted.top/post/p3147-ti-jie/">P3147题解</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://accepted.top/post/p1637-san-yuan-shang-sheng-zi-xu-lie-ti-jie/">P1637 三元上升子序列 题解</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://accepted.top/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/">树状数组求逆序对</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://accepted.top/post/chi-san-hua/">离散化</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://accepted.top/post/stl-zong-jie/">STL总结</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://accepted.top/post/zuo-pian-shu/">左偏树</a>
-            </li>
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://accepted.top/tag/0thlLZtiF/" class="badge success">
-          题解
-        </a>
-      
-        <a href="https://accepted.top/tag/Kinq1PdEy/" class="badge success">
-          算法
-        </a>
-      
-        <a href="https://accepted.top/tag/GmrWV3n3H/" class="badge secondary">
-          杂
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-     | <a class="rss" href="https://accepted.top/atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-
-
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
 <script type="application/javascript">
 
 AOS.init();
 
-hljs.initHighlightingOnLoad()
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
+
+
 
 
 
