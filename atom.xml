@@ -2,22 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://accepted.top</id>
     <title>ori&apos;s blog</title>
-    <updated>2020-07-20T02:32:37.475Z</updated>
+    <updated>2020-07-20T02:35:56.134Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://accepted.top"/>
     <link rel="self" href="https://accepted.top/atom.xml"/>
     <logo>https://accepted.top/images/avatar.png</logo>
     <icon>https://accepted.top/favicon.ico</icon>
     <rights>All rights reserved 2020, ori&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[实验]]></title>
-        <id>https://accepted.top/post/shi-yan/</id>
-        <link href="https://accepted.top/post/shi-yan/">
-        </link>
-        <updated>2020-07-20T02:32:24.000Z</updated>
-        <content type="html"><![CDATA[<p>123</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[7.8模拟赛题解]]></title>
         <id>https://accepted.top/post/78-mo-ni-sai-ti-jie/</id>
@@ -855,6 +846,32 @@ int main()
 	}
 	return 0;
 }
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[struct重载运算符用法]]></title>
+        <id>https://accepted.top/post/struct-chong-zai-yun-suan-fu-yong-fa/</id>
+        <link href="https://accepted.top/post/struct-chong-zai-yun-suan-fu-yong-fa/">
+        </link>
+        <updated>2020-06-29T06:43:30.000Z</updated>
+        <content type="html"><![CDATA[<p>operator是c++的重载运算符，字面意思，自己理解。</p>
+<p>一般回放在struct结构体当中，可以直接把结构体中的变量用运算符搞，挺方便的。</p>
+<p>重载运算符的格式如下：</p>
+<p>bool operator 运算符 (const 结构体名称 b) const</p>
+<p>{<br>
+return(什么时候这个运算符对结构体成立);//注意对此运算符使用this-&gt;元素名；</p>
+<p>}</p>
+<p>举例</p>
+<pre><code class="language-cpp">struct point
+{
+	    int elem;
+	    bool operator&lt;(point b)const
+    	{
+	    	    return elem&gt;b.elem;
+	    }
+};
+
 </code></pre>
 ]]></content>
     </entry>
