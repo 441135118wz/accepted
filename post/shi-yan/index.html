@@ -5,7 +5,7 @@
     
 <meta charset="utf-8" >
 
-<title>算法 | ori&#39;s blog</title>
+<title>实验 | ori&#39;s blog</title>
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,6 +16,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://accepted.top/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -75,126 +81,37 @@
 
 
       <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">实验</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-07-20</span>
+            
+          </div>
+          <div class="post-content">
+            <p>123</p>
 
-        <div class="current-tag-container">
-          <h2 class="title">
-            <i class="icon icon-pricetags-outline"></i> 算法
-          </h2> 
+          </div>
         </div>
 
         
-<section class="post-item">
-    <div class="content">
-      <a href="https://accepted.top/post/kmp-suan-fa-xue-xi-xiao-jie/">
-        <h2 class="post-title">KMP算法学习小结</h2>
-      </a>
-      <div class="post-abstract">
-        
+          <div class="next-post">
+            <a class="purple-link" href="https://accepted.top/post/78-mo-ni-sai-ti-jie/">
+              <h3 class="post-title">
+                下一篇：7.8模拟赛题解
+              </h3>
+            </a>
+          </div>
+          
       </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-07-07</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://accepted.top/tag/Kinq1PdEy/">
-                算法
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
 
-<section class="post-item">
-    <div class="content">
-      <a href="https://accepted.top/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/">
-        <h2 class="post-title">树状数组求逆序对</h2>
-      </a>
-      <div class="post-abstract">
+      
         
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-07-01</span>
+          <div id="gitalk-container"></div>
         
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://accepted.top/tag/Kinq1PdEy/">
-                算法
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
 
-<section class="post-item">
-    <div class="content">
-      <a href="https://accepted.top/post/zuo-pian-shu/">
-        <h2 class="post-title">左偏树</h2>
-      </a>
-      <div class="post-abstract">
         
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-06-29</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://accepted.top/tag/Kinq1PdEy/">
-                算法
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-<section class="post-item">
-    <div class="content">
-      <a href="https://accepted.top/post/628/">
-        <h2 class="post-title">lca复习小结（代码实现）</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-06-28</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
-            
-              <a href="https://accepted.top/tag/Kinq1PdEy/">
-                算法
-                
-              </a>
-            
-          </span>
-        
-      </div>
-    </div>
-    
-  </section>
-
-
-<div class="pagination-container">
-  
-  
-</div>
-
-
-      </div>
+      
 
       <div class="site-footer">
   <div class="slogan"></div>
@@ -228,6 +145,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '59003c567c14aece22fa',
+        clientSecret: '6b76d3c5e9bfbdecde221c8250472b2a50948823',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
