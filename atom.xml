@@ -2,13 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://accepted.top</id>
     <title>accepted&apos;s blog</title>
-    <updated>2020-07-24T09:57:39.467Z</updated>
+    <updated>2020-07-24T11:06:35.886Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://accepted.top"/>
     <link rel="self" href="https://accepted.top/atom.xml"/>
     <logo>https://accepted.top/images/avatar.png</logo>
     <icon>https://accepted.top/favicon.ico</icon>
     <rights>All rights reserved 2020, accepted&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[关于友链]]></title>
+        <id>https://accepted.top/post/guan-yu-you-lian/</id>
+        <link href="https://accepted.top/post/guan-yu-you-lian/">
+        </link>
+        <updated>2020-07-24T11:05:48.000Z</updated>
+        <content type="html"><![CDATA[<p>欢迎各位大佬来加我的友链。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于此博客]]></title>
         <id>https://accepted.top/post/guan-yu-ci-bo-ke/</id>
@@ -763,101 +772,6 @@ int main(){
 <h1 id="后记">后记</h1>
 <p>对于初学者来说，STL尽量不要使用，要理解STL实现的原理，STL只是用于简化代码的，而不是用来当算法学习的。</p>
 <p>STL就像是一个个封装好的工具，可以任你挑选使用，但是你需要先知道，哪个工具适合于你，也需要学会使用工具，这篇文章则是更偏向于讲后者。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[左偏树]]></title>
-        <id>https://accepted.top/post/zuo-pian-shu/</id>
-        <link href="https://accepted.top/post/zuo-pian-shu/">
-        </link>
-        <updated>2020-06-29T12:00:43.000Z</updated>
-        <content type="html"><![CDATA[<p>左偏树</p>
-<p>核心：merge函数</p>
-<p>思想：</p>
-<p>左偏树的合并是一个递归过程，对于以 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> 为根的树：</p>
-<p>如果 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> 二者之一为空树，则返回另一棵。</p>
-<p>如果 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> 均不为空，则比较 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> 的权值大小。</p>
-<p>如果 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 的权值较大，那么就把 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 右儿子和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> 合并的结果作为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 新的右儿子，返回 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> ；</p>
-<p>否则就把 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">x</span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi></mrow><annotation encoding="application/x-tex">y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> 交换，继续上面的操作。</p>
-<p>合并以后由于我们还要维护左偏性质，即：如果合并后右儿子的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>i</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">dis</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span><span class="mord mathdefault">s</span></span></span></span> 大于左儿子的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>i</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">dis</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span><span class="mord mathdefault">s</span></span></span></span> ，则交换左右儿子。</p>
-<p>这便是通过左偏树来实现可并堆的模拟过程。</p>
-<p>代码：</p>
-<pre><code class="language-cpp">int merge(int x,int y)
-{
-    if(!x) return y;
-    if(!y) return x;
-    if(v[x]&lt;v[y]) swap(x,y);
-    rson[x]=merge(rson[x],y);
-    if(dis[r[x]]&gt;dis[l[x]]) swap(lson[x],rson[x]);
-    dis[x]=dis[rson[x]]+1;
-    return x;
-}
-</code></pre>
-<p>洛谷左偏树模板代码：</p>
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-const int maxn = 100010;
-int n, m, op, x, y;
-int lson[maxn], rson[maxn], dist[maxn], fa[maxn];
-bool tf[maxn];
-struct node{
-	int id, v;
-	bool operator&lt;(node x) const { 
-		return v == x.v ? id &lt; x.id : v &lt; x.v; 
-	}
-} v[maxn];
-int find(int x){ 
-	return fa[x] == x ? x : fa[x] = find(fa[x]); 
-}
-int merge(int x, int y){
-	if (!x || !y)
-		return x + y;
-	if (v[y] &lt; v[x])
-		swap(x, y);
-	rson[x] = merge(rson[x], y);
-	if (dist[lson[x]] &lt; dist[rson[x]])
-		swap(lson[x], rson[x]);
-	dist[x] = dist[rson[x]] + 1;
-	return x;
-}
-int main()
-{
-	dist[0] = -1;
-	read(n);
-	read(m);
-	For(i,1,n)
-		read(v[i].v), fa[i] = i, v[i].id = i;
-	while (m--)
-	{
-		read(op);
-		read(x);
-		if (op == 1)
-		{
-			read(y);
-			if (tf[x] || tf[y])
-				continue;
-			x = find(x);
-			y = find(y);
-			if (x != y)
-				fa[x] = fa[y] = merge(x, y);
-		}
-		if (op == 2)
-		{
-			if (tf[x])
-			{
-				printf(&quot;-1\n&quot;);
-				continue;
-			}
-			x = find(x);
-			printf(&quot;%d\n&quot;, v[x].v);
-			tf[x] = true;
-			fa[lson[x]] = fa[rson[x]] = fa[x] = merge(lson[x], rson[x]);
-			lson[x] = rson[x] = dist[x] = 0;
-		}
-	}
-	return 0;
-}
-</code></pre>
 ]]></content>
     </entry>
 </feed>
