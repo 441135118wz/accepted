@@ -2,13 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://accepted.top</id>
     <title>accepted&apos;s blog</title>
-    <updated>2020-07-25T15:22:32.174Z</updated>
+    <updated>2020-07-31T00:10:40.618Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://accepted.top"/>
     <link rel="self" href="https://accepted.top/atom.xml"/>
     <logo>https://accepted.top/images/avatar.png</logo>
     <icon>https://accepted.top/favicon.ico</icon>
     <rights>All rights reserved 2020, accepted&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[sth to learn]]></title>
+        <id>https://accepted.top/post/sth-to-learn/</id>
+        <link href="https://accepted.top/post/sth-to-learn/">
+        </link>
+        <updated>2020-07-31T00:09:58.000Z</updated>
+        <content type="html"><![CDATA[<p>笛卡尔树</p>
+<p>分块</p>
+<p>主席树</p>
+<p>可撤销贪心</p>
+<p>容斥定理</p>
+<p>网络流</p>
+<p>树剖</p>
+<p>点分治</p>
+<p>trie树</p>
+<p>CDQ分治</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于友链]]></title>
         <id>https://accepted.top/post/guan-yu-you-lian/</id>
@@ -433,346 +451,6 @@ For(i,1,n) a[i]=lower_bound(b+1,b+len+1,a[i])-b;
 </tbody>
 </table>
 <p>感性理解一下就很简单了。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[STL总结]]></title>
-        <id>https://accepted.top/post/stl-zong-jie/</id>
-        <link href="https://accepted.top/post/stl-zong-jie/">
-        </link>
-        <updated>2020-06-30T13:12:40.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="迭代器">迭代器</h1>
-<p>迭代器是一个变量，相当于容器和操纵容器的算法之间的中介。迭代器可以指向容器中的某个元素，通过迭代器就可以读写它指向的元素。</p>
-<h1 id="unique">unique</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>unique</mtext></mrow><annotation encoding="application/x-tex">\text {unique}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8623000000000001em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">unique</span></span></span></span></span> 是STL比较实用的一个函数。用于“去除”容器内相邻的重复的元素（只保留一个）。这里说的去除并不是真正将容器内的重复元素删去，只是把重复的元素移到容器最后，但是依然在容器内。 对于数组而言返回去重后最后一个元素的指针，而其他容器则是返回去重后最后一个元素的迭代器。</p>
-<h3 id="用法举例">用法举例</h3>
-<p>因为是去除相邻的重复元素，因此通常使用前容器应该要是有序的。</p>
-<p>数组:</p>
-<pre><code class="language-cpp">#include &lt;iostream&gt;
-#include &lt;algorithm&gt;
-using namespace std;
-int main()
-{
-  int a[6] = {1,1,4,6,6,7};
-  int *p = unique(a,a+6);
-  cout &lt;&lt; &amp;a[4] &lt;&lt; endl;
-  cout &lt;&lt; p &lt;&lt; endl;
-  cout &lt;&lt; p - a &lt;&lt;endl;
-  for(int i = 0;i &lt; p-a;i++)
-      cout &lt;&lt; a[i] &lt;&lt; endl;
-  return 0;
-}
-</code></pre>
-<h1 id="vector">vector</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>vector</mtext></mrow><annotation encoding="application/x-tex">\text {vector}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord text"><span class="mord">vector</span></span></span></span></span>可以看成是什么都可以放进去的线性表。</p>
-<p>用法：</p>
-<pre><code class="language-cpp">vector&lt;int&gt;v;//vector元素为 int 型  
-vector&lt;int&gt;::iterator it;//定义一个迭代器
-
-v.push_back()    //在数组的最后添加一个数据
-v.pop_back()     //去掉数组的最后一个数据 v.front() 　　　　//返回第一个元素(栈顶元素)
-v.begin()        //得到数组头的指针，用迭代器接受
-v.end()          //得到数组的最后一个单元+1的指针，用迭代器接受
-v.clear()        //移除容器中所有数据
-v.empty()        //判断容器是否为空
-v.erase(pos)     //删除pos位置的数据
-v.erase(beg,end) //删除[beg,end)区间的数据
-v.size()         //回容器中实际数据的个数v.insert(pos,data) //在pos处插入数据
-</code></pre>
-<h1 id="deque">deque</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>deque</mtext></mrow><annotation encoding="application/x-tex">\text {deque}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">deque</span></span></span></span></span> 是双端队列STL，是一种两端都可以进出元素的结构。</p>
-<p>用法：</p>
-<pre><code class="language-cpp">deque&lt;int&gt; d;
-d.push_front(x);    //双端队列头部增加一个元素X
-d.push_back(x);     //双端队列尾部增加一个元素X
-d.pop_front();      //双端队列头部弹出一个元素X
-d.pop_back();       //双端队列尾部弹出一个元素X
-d.clear();          //清空双端队列中元素
-d.empty();          //队列中是否有元素
-d.size();           //队列中元素个数
-d.front();          //队列中头部元素
-d.back();           //队列中尾部元素
-d.begin();          //指向头部元素
-d.end();            //指向尾部元素
-
-</code></pre>
-<h1 id="stack">stack</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>stack</mtext></mrow><annotation encoding="application/x-tex">\text {stack}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">stack</span></span></span></span></span>是栈STL，是一种先进后出的结构。</p>
-<p>用法：</p>
-<pre><code class="language-cpp">stack&lt;int&gt; s;
-s.empty();	//栈中是否有元素
-s.size();	//栈中元素个数
-s.pop();	//弹出栈顶元素
-s.top();	//反回栈顶元素
-s.push(x);  //栈中压入x元素
-</code></pre>
-<h1 id="queue">queue</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>queue</mtext></mrow><annotation encoding="application/x-tex">\text {queue}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">queue</span></span></span></span></span> 是队列STL，是一种先进先出的结构。</p>
-<p>用法：</p>
-<pre><code class="language-cpp">q.empty()// 如果队列为空返回true，否则返回false
-q.size() // 返回队列中元素的个数
-q.pop()  //删除队列首元素
-q.front()  // 返回队首元素的值 
-q.push(X) //在队尾压入新元素X
-q.back() //返回队列尾元素的值  
-</code></pre>
-<h1 id="priority_queue">priority_queue</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>priority</mtext><mi mathvariant="normal">_</mi><mtext>queue</mtext></mrow><annotation encoding="application/x-tex">\text {priority}\_\text{queue}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.97786em;vertical-align:-0.31em;"></span><span class="mord text"><span class="mord">priority</span></span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord text"><span class="mord">queue</span></span></span></span></span> 是优先队列STL，优先队列是队列的一种，不过它可以按照自定义的一种方式（数据的优先级）来对队列中的数据进行动态的排序，每次的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>push</mtext></mrow><annotation encoding="application/x-tex">\text {push}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">push</span></span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>pop</mtext></mrow><annotation encoding="application/x-tex">\text {pop}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">pop</span></span></span></span></span> 操作，队列都会动态的调整，以达到我们预期的方式来存储。</p>
-<p>例如，将元素 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>5 3 2 4 6</mtext></mrow><annotation encoding="application/x-tex">\text {5 3 2 4 6}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">5 3 2 4 6</span></span></span></span></span> 依次 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>push</mtext></mrow><annotation encoding="application/x-tex">\text {push}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">push</span></span></span></span></span> 到优先队列中，规定顺序为从大到小并输出，输出顺序为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>6 5 4 3 2</mtext></mrow><annotation encoding="application/x-tex">\text {6 5 4 3 2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">6 5 4 3 2</span></span></span></span></span></p>
-<p>定义</p>
-<pre><code class="language-cpp">priority_queue&lt;int&gt; p;//最大值优先，是大顶堆一种简写方式
-priority_queue&lt;int,vector&lt;int&gt;,greater&lt;int&gt;&gt;q1;//最小值优先，小顶堆
-priority_queue&lt;int,vector&lt;int&gt;,less&lt;int&gt; &gt;q2;//最大值优先，大顶堆
-
-//其中第一个参数是数据类型，第二个参数为容器类型。第三个参数为比较函数。
-</code></pre>
-<p>在使用时，我们会有很多时间用到根据结构体的某一个元素进行排序，下面给出定义结构体的优先级比较方式</p>
-<pre><code class="language-cpp">struct node
-{
-    string name;
-    int price;
-    friend bool operator&lt; (node a, node b)
-    {
-        return a.price &lt; b.price; // 相当于less,这是大顶堆，反之则是小顶堆，最大值优先
-    }
-} stu; //定义结构体变量
-
-//这样直接可以：
-priority_queue&lt;node &gt; q;
-</code></pre>
-<p>可以将比较运算符外置，方法如下</p>
-<pre><code class="language-cpp">struct node
-{
-    string name;
-    int price;
-} stu; //定义结构体变量
-
-struct cmp
-{
-    bool operator () (node a, node b) // 重载括号
-    {
-        return node.price &lt; node.price; // 相当于less，大顶堆
-    }
-};
-</code></pre>
-<p>3.常用操作：</p>
-<pre><code class="language-cpp">q.push(x) //将x加入队列中，即入队操作
-
-q.pop() //出队操作(删除队列首元素)，只是出队，没有返回值
-
-q.top() //返回第一个元素(队首元素)优先队列的队首用top，而普通队列的队首用front
-
-q.size() //返回栈队列中的元素个数
-
-q.empty() //当队列为空时，返回 true
-</code></pre>
-<p>这里放下 <a href="https://www.luogu.com.cn/problem/P1090#submit">P1090 合并果子</a> 的代码，方便理解使用 <span class='katex-error' title='ParseError: KaTeX parse error: Expected &#039;}&#039;, got &#039;_&#039; at position 16: \text {priority_̲queue}'>\text {priority_queue}</span>：</p>
-<pre><code class="language-cpp">#include&lt;bits/stdc++.h&gt;
-using namespace std;
-priority_queue&lt;int,vector&lt;int&gt;,greater&lt;int&gt; &gt;q;
-int main(){
-    int a,b,x,y,ans=0;
-    read(a);
-	For(i,0,a-1) read(b),q.push(b);
-	For(i,1,a-1){
-		x=q.top();q.pop();
-         y=q.top();q.pop();
-		q.push(x+y);ans+=x+y;
-	}
-	write(ans);
-}
-</code></pre>
-<h1 id="set">set</h1>
-<h2 id="介绍">介绍</h2>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>set</mtext></mrow><annotation encoding="application/x-tex">\text {set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord text"><span class="mord">set</span></span></span></span></span> 是集合<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>STL</mtext></mrow><annotation encoding="application/x-tex">\text {STL}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">STL</span></span></span></span></span> ，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>set</mtext></mrow><annotation encoding="application/x-tex">\text {set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord text"><span class="mord">set</span></span></span></span></span> 是一个内部自动有序且不含重复元素的容器。</p>
-<p><strong>set最主要的作用是自动去重并按升序排序</strong></p>
-<h2 id="用法">用法：</h2>
-<h3 id="1set的定义">1.set的定义</h3>
-<pre><code class="language-cpp">set&lt;typename&gt; name；
-//这里的typename可以是任何基本类型
-//举例：
-set&lt;int&gt; name;
-set&lt;double&gt; name;
-set&lt;char&gt; name;
-set&lt;node&gt; name; //node是结构体的类型
-</code></pre>
-<h3 id="2-set-容器内元素的访问">2. set 容器内元素的访问</h3>
-<pre><code>//（重点）set 只能通过迭代器(iterator)访问
-set&lt;typename&gt;::iterator it;
-</code></pre>
-<p>举例：</p>
-<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
-using namespace std;
-int main() {
-    set&lt;int&gt; st;
-    st.insert(3);   //insert(x)将x插入set中
-    st.insert(5);
-    st.insert(2);
-    st.insert(3);
-    for(set&lt;int&gt;::iterator it = st.begin(); it != st.end(); it++) {
-        printf(&quot;%d&quot;, *it);
-    }
-}
-</code></pre>
-<h3 id="3set常用函数">3.set常用函数</h3>
-<ol>
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>insert(x)</mtext></mrow><annotation encoding="application/x-tex">\text {insert(x)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">insert(x)</span></span></span></span></span></li>
-</ol>
-<pre><code class="language-cpp">insert(x);         //insert(x)可将 x 插入 set 容器中，并自动递增排序和去重，时间复杂度O(logN)
-</code></pre>
-<ol start="2">
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>find(value)</mtext></mrow><annotation encoding="application/x-tex">\text {find(value)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">find(value)</span></span></span></span></span></li>
-</ol>
-<pre><code class="language-cpp">find(value);       //find(value)返回 set 中对应值为 value 的迭代器，时间复杂度为O(logN)
-//用法：
-set&lt;int&gt;::iterator it = st.find(2); //在set中查找2,返回其迭代器
-printf(&quot;%d\n&quot;, *it);
-//以上两句也可以直接写成printf(&quot;%d\n&quot;, *(st.find(2)));
-</code></pre>
-<ol start="3">
-<li>$ \text {erase()}$</li>
-</ol>
-<pre><code class="language-cpp">erase();
-//erase()有两种用法：删除单个元素，删除一个区间内的所有元素
-// 1. 删除单个元素
-//删除单个元素的方法有两种
-//st.erase(it), it为所需要删除元素的迭代器。时间复杂度为O(1)
-st.erase(st.find(x));//利用find()函数找到x,然后用erase删除它
-
-//st.erase(value), value为所需要删除元素的值。时间复杂度为O(logN)
-st.erase(x);  //删除set中值为x的元素
-
-
-// 2.删除一个区间内的所有元素
-//st.erase(first, last)可以删除一个区间内的所有元素
-//first为所需要删除区间的起始迭代器，last则为所需要删除区间的末尾迭代器的下一地址
-//即删除[first, last)， 时间复杂度为O(last - first)
-set&lt;int&gt;::iterator it1 = st.find(x);
-set&lt;int&gt;::iterator it2 = st.find(y);
-st.erase(it1, it2); //删除元素x至y之间的元素(包括x和y)
-</code></pre>
-<ol start="4">
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>size()</mtext></mrow><annotation encoding="application/x-tex">\text {size()}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">size()</span></span></span></span></span></li>
-</ol>
-<pre><code class="language-cpp">int x=size();//size()用来获得set内元素的个数，时间复杂度为O(1)
-</code></pre>
-<ol start="5">
-<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>clear()</mtext></mrow><annotation encoding="application/x-tex">\text {clear()}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">clear()</span></span></span></span></span></li>
-</ol>
-<pre><code class="language-cpp">set&lt;int&gt; s;
-s.clear(); //清空set
-</code></pre>
-<h1 id="multiset">multiset</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>set</mtext></mrow><annotation encoding="application/x-tex">\text {set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord text"><span class="mord">set</span></span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>multiset</mtext></mrow><annotation encoding="application/x-tex">\text {multiset}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">multiset</span></span></span></span></span> 会根据特定的排序原则将元素排序。两者不同之处在于， <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>multiset</mtext></mrow><annotation encoding="application/x-tex">\text {multiset}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">multiset</span></span></span></span></span> 允许元素重复，而 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>set</mtext></mrow><annotation encoding="application/x-tex">\text {set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord text"><span class="mord">set</span></span></span></span></span> 不允许重复，其他操作和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>set</mtext></mrow><annotation encoding="application/x-tex">\text {set}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord text"><span class="mord">set</span></span></span></span></span> 都差不多的。</p>
-<h1 id="map">map</h1>
-<p>说白了就是一个动态的桶。</p>
-<p>函数：</p>
-<pre><code class="language-cpp">//应该只有这个要用到。。
-map&lt;int,int&gt; mp;
-mp.clear();//map初始化
-</code></pre>
-<h1 id="unordered_map">unordered_map</h1>
-<p>使用方法和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>map</mtext></mrow><annotation encoding="application/x-tex">\text {map}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">map</span></span></span></span></span><strong>完全</strong>一样！</p>
-<p>但是由于底层原理不同，它的查询是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O(1)</mtext></mrow><annotation encoding="application/x-tex">\text {O(1)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">O(1)</span></span></span></span></span>的，而<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>map</mtext></mrow><annotation encoding="application/x-tex">\text {map}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">map</span></span></span></span></span>的查询却是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O(log n)</mtext></mrow><annotation encoding="application/x-tex">\text {O(log n)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">O(log n)</span></span></span></span></span>的。</p>
-<p>传闻这玩意要C++11才能用 ——假的！</p>
-<p>一切都在标准C++范围内。</p>
-<h1 id="bitset">bitset</h1>
-<p>可以看作一个支持二进制数，每  位占用  个字节，并支持基本的位运算。</p>
-<p>类型可以用  和整数初始化（整数转化成对应的二进制）。</p>
-<p>举例：</p>
-<pre><code>bitset&lt;23&gt;bit (string(&quot;11101001&quot;));
-cout&lt;&lt;bit&lt;&lt;endl;
-bit=233;
-cout&lt;&lt;bit&lt;&lt;endl;
-</code></pre>
-<p>输出：</p>
-<pre><code>00000000000000011101001
-00000000000000011101001
-</code></pre>
-<p>这应该是用的最多的东西了，别的函数还有很多，这里就省略了（觉得没什么用。</p>
-<h1 id="binary_search">binary_search</h1>
-<p>函数模板：</p>
-<pre><code class="language-cpp">binary_search(arr[], arr[]+size, indx);
-</code></pre>
-<p>参数说明：<br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>arr[]</mtext></mrow><annotation encoding="application/x-tex">\text {arr[]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">arr[]</span></span></span></span></span> ：数组首地址<br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>size</mtext></mrow><annotation encoding="application/x-tex">\text {size}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66786em;vertical-align:0em;"></span><span class="mord text"><span class="mord">size</span></span></span></span></span>：数组元素个数<br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>indx</mtext></mrow><annotation encoding="application/x-tex">\text {indx}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">indx</span></span></span></span></span>：需要查找的值<br>
-函数功能： 在数组中以二分法检索的方式查找，若在数组(要求数组元素非递减)中查找到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>indx</mtext></mrow><annotation encoding="application/x-tex">\text {indx}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">indx</span></span></span></span></span> 元素则真，若查找不到则返回值为假。</p>
-<h1 id="lower_bound">lower_bound</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>lower</mtext><mi mathvariant="normal">_</mi><mtext>bound(begin, end, num)</mtext></mrow><annotation encoding="application/x-tex">\text {lower}\_\text{bound(begin, end, num)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.06em;vertical-align:-0.31em;"></span><span class="mord text"><span class="mord">lower</span></span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord text"><span class="mord">bound(begin, end, num)</span></span></span></span></span> ：从数组的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>begin</mtext></mrow><annotation encoding="application/x-tex">\text {begin}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">begin</span></span></span></span></span> 位置到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>end - 1</mtext></mrow><annotation encoding="application/x-tex">\text {end - 1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">end - 1</span></span></span></span></span>位置二分查找第一个大于或等于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>num</mtext></mrow><annotation encoding="application/x-tex">\text {num}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord text"><span class="mord">num</span></span></span></span></span> 的数字，找到返回该数字的地址，不存在则返回 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>end</mtext></mrow><annotation encoding="application/x-tex">\text {end}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">end</span></span></span></span></span> 。通过返回的地址减去起始地址<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>begin</mtext></mrow><annotation encoding="application/x-tex">\text {begin}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">begin</span></span></span></span></span> ，得到找到数字在数组中的下标。</p>
-<pre><code class="language-cpp">int num[n+1];
-pos=lower_bound(num+1,num+n+1,y)-num;    //返回数组num[1]到num[n]的元素中第一个大于或等于被查数的值的下标
-</code></pre>
-<h1 id="upper_bound">upper_bound</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>upper</mtext><mi mathvariant="normal">_</mi><mtext>bound( begin,end,num)</mtext></mrow><annotation encoding="application/x-tex">\text {upper}\_\text{bound( begin,end,num)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.06em;vertical-align:-0.31em;"></span><span class="mord text"><span class="mord">upper</span></span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord text"><span class="mord">bound( begin,end,num)</span></span></span></span></span> ：从数组的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>begin</mtext></mrow><annotation encoding="application/x-tex">\text {begin}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">begin</span></span></span></span></span> 位置到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>end - 1</mtext></mrow><annotation encoding="application/x-tex">\text {end - 1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">end - 1</span></span></span></span></span> 位置二分查找第一个小于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>num</mtext></mrow><annotation encoding="application/x-tex">\text {num}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord text"><span class="mord">num</span></span></span></span></span> 的数字，找到返回该数字的地址，不存在则返回 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>end</mtext></mrow><annotation encoding="application/x-tex">\text {end}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">end</span></span></span></span></span> 。通过返回的地址减去起始地址 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>begin</mtext></mrow><annotation encoding="application/x-tex">\text {begin}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">begin</span></span></span></span></span> ，得到找到数字在数组中的下标。</p>
-<pre><code class="language-cpp">int num[n+1];
-pos=upper_bound(num+1,num+n+1,y)-num;    //返回数组num[1]到num[n]的元素中第一个大于被查数的值的下标
-</code></pre>
-<h1 id="reverse">reverse</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>reverse()</mtext></mrow><annotation encoding="application/x-tex">\text {reverse()}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">reverse()</span></span></span></span></span> 函数可以对字符串进行反转操作。</p>
-<p>容器类型的要用 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>begin()</mtext></mrow><annotation encoding="application/x-tex">\text {begin()}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">begin()</span></span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>end()</mtext></mrow><annotation encoding="application/x-tex">\text {end()}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">end()</span></span></span></span></span> 来指定反转的区域，数组类型的直接用 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>int</mtext></mrow><annotation encoding="application/x-tex">\text {int}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66786em;vertical-align:0em;"></span><span class="mord text"><span class="mord">int</span></span></span></span></span> 类型即可。</p>
-<h3 id="使用方法">使用方法</h3>
-<ol>
-<li>交换 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>vector</mtext></mrow><annotation encoding="application/x-tex">\text {vector}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord text"><span class="mord">vector</span></span></span></span></span> 容器中元素顺序</li>
-</ol>
-<pre><code class="language-cpp">vector&lt;int&gt; v = {5,4,3,2,1};
-reverse(v.begin(),v.end());//v的值为1,2,3,4,5
-</code></pre>
-<ol start="2">
-<li>交换 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>string</mtext></mrow><annotation encoding="application/x-tex">\text {string}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8623000000000001em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">string</span></span></span></span></span> 字符串中元素的顺序</li>
-</ol>
-<pre><code class="language-cpp">string str=&quot;hello&quot;;
-reverse(str.begin(),str.end());//str结果为olleh
-</code></pre>
-<ol start="3">
-<li>交换字符数组 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>char[]</mtext></mrow><annotation encoding="application/x-tex">\text {char[]}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">char[]</span></span></span></span></span> 中元素的顺序</li>
-</ol>
-<pre><code class="language-cpp">char a[101] = “hello world”;
-reverse(a,a+strlen(a));
-</code></pre>
-<ol start="4">
-<li>翻转一个数组</li>
-</ol>
-<pre><code class="language-cpp">int a[5+1]={0,1,2,3,4,5};
-reverse(a+1,a+n+1);
-</code></pre>
-<h1 id="random_shuffle">random_shuffle</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>random</mtext><mi mathvariant="normal">_</mi><mtext>shuffle()</mtext></mrow><annotation encoding="application/x-tex">\text {random}\_\text {shuffle()}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.06em;vertical-align:-0.31em;"></span><span class="mord text"><span class="mord">random</span></span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord text"><span class="mord">shuffle()</span></span></span></span></span> 函数可以随机打乱容器内元素，用法和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>reverse()</mtext></mrow><annotation encoding="application/x-tex">\text {reverse()}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">reverse()</span></span></span></span></span> 相同。</p>
-<pre><code class="language-cpp">int a[5+1]={0,1,2,3,4,5};
-random_shuffle(a+1,a+n+1);
-</code></pre>
-<h1 id="next_permutation">next_permutation</h1>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>next</mtext><mi mathvariant="normal">_</mi><mtext>permutation</mtext></mrow><annotation encoding="application/x-tex">\text {next}\_\text{permutation}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.97786em;vertical-align:-0.31em;"></span><span class="mord text"><span class="mord">next</span></span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord text"><span class="mord">permutation</span></span></span></span></span> 是全排列函数。</p>
-<p>用法比较少，下面是用这个函数实现全排列的代码：</p>
-<pre><code class="language-cpp">#include &lt;stdio.h&gt;
-#include &lt;algorithm&gt;
-using namespace std;
-int main(){
-    int n;
-    while(scanf(&quot;%d&quot;,&amp;n)&amp;&amp;n){
-        int a[1000];
-        for(int i=0;i&lt;n;i++){
-            scanf(&quot;%d&quot;,&amp;a[i]);
-        }
-        sort(a,a+n);
-        do{
-            for(int i=0;i&lt;n;i++)
-                printf(&quot;%d &quot;,a[i]);
-            printf(&quot;\n&quot;);
-        }while(next_permutation(a,a+n));
-    }
-    return 0;
-}
-</code></pre>
-<h1 id="注意事项重要">注意事项（重要）：</h1>
-<ol>
-<li>除开 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>vector</mtext></mrow><annotation encoding="application/x-tex">\text {vector}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord text"><span class="mord">vector</span></span></span></span></span> 和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>string</mtext></mrow><annotation encoding="application/x-tex">\text {string}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8623000000000001em;vertical-align:-0.19444em;"></span><span class="mord text"><span class="mord">string</span></span></span></span></span> 之外的STL容器都不支持 *（it+i） 的访问方式（这里 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>it</mtext></mrow><annotation encoding="application/x-tex">\text {it}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66786em;vertical-align:0em;"></span><span class="mord text"><span class="mord">it</span></span></span></span></span> 是迭代器）</li>
-<li>大多数STL都需要特定的头文件，但是万能头是全部都包含的，为了方便，也为了安全，请使用万能头。</li>
-</ol>
-<h1 id="后记">后记</h1>
-<p>对于初学者来说，STL尽量不要使用，要理解STL实现的原理，STL只是用于简化代码的，而不是用来当算法学习的。</p>
-<p>STL就像是一个个封装好的工具，可以任你挑选使用，但是你需要先知道，哪个工具适合于你，也需要学会使用工具，这篇文章则是更偏向于讲后者。</p>
 ]]></content>
     </entry>
 </feed>
