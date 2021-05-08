@@ -2,88 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://accepted.top</id>
     <title>accepted&apos;s blog</title>
-    <updated>2020-10-16T04:29:37.597Z</updated>
+    <updated>2021-05-08T10:11:59.097Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://accepted.top"/>
     <link rel="self" href="https://accepted.top/atom.xml"/>
     <logo>https://accepted.top/images/avatar.png</logo>
     <icon>https://accepted.top/favicon.ico</icon>
-    <rights>All rights reserved 2020, accepted&apos;s blog</rights>
-    <entry>
-        <title type="html"><![CDATA[他是 ISIJ 第四名，也是在线知名题库的洛谷“网红”]]></title>
-        <id>https://accepted.top/post/ta-shi-isij-di-si-ming-ye-shi-zai-xian-zhi-ming-ti-ku-de-luo-gu-wang-hong/</id>
-        <link href="https://accepted.top/post/ta-shi-isij-di-si-ming-ye-shi-zai-xian-zhi-ming-ti-ku-de-luo-gu-wang-hong/">
-        </link>
-        <updated>2020-10-16T04:28:44.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2020/10/16/wpL4loVXdH1vnIe.jpg" alt="f273d6cbce54482ebfa1a9c11dad2357.jpeg" loading="lazy"></figure>
-<p>2020年国际初中生信息学竞赛（ISIJ）上，以优秀成绩拿下第四名年仅初三的张湫阳，成为最夺目的选手之一。</p>
-<p>而且虽然是初三的选手，但他取得优异成绩后，不少网友并不感到陌生，纷纷留言：</p>
-<p>这不是洛谷上天天爆切神仙题的小哥吗？</p>
-<p>没错，和其他ISIJ选手不同，张湫阳之前在网络上就已经小有名气，可以说是洛谷上的“网红”。</p>
-<p>他的洛谷账号Follow人数刚刚突破一万大关，洛谷的估值排名也常年稳居前五，还有一个粉丝群。</p>
-<p>这样的数据放在国内也是妥妥的知识区网红了。</p>
-<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2020/10/16/hobtIsYg9lQxuAF.png" alt="ft.PNG" loading="lazy"></figure>
-<p>ISIJ一个月前，张湫阳更是在个人的洛谷博客上发布一篇博客，是ISIJ集训队的作业，并且在博客的最后放下豪言“近几年的IOI题都是傻逼题”。</p>
-<p>一位“不明真相”的网友还评价说，ISIJ金牌只有1%的机会能获得，“我愿意以1:99的赔率打赌”。</p>
-<figure data-type="image" tabindex="3"><img src="https://i.loli.net/2020/10/16/Nt9nqfKFIhCGuxw.png" alt="QQ图片20201016080613.png" loading="lazy"></figure>
-<p>这位网友不知道的是，张湫阳去年第一次参加CSP就获得了400分以上的好成绩，吊打了全国大部分的选手。</p>
-<p>现在该评论已经被张湫阳删除，不知道这位网友作何感想。</p>
-<p>另外，与国内诸多IOI金牌学霸一样的是，张湫阳也收到了名校通知书。</p>
-<p>国内有不少IOI金牌得主被清华姚班选择，张湫阳则是被绍兴市第一中学录取。</p>
-<p>对于仅仅年满15岁的他来说，一切都才刚开始。</p>
-<h3 id="两年前开始编程生涯">两年前开始编程生涯</h3>
-<p>张湫阳对编程产生的兴趣起源很早，两年前就开始在洛谷注册了一个账号，通过的第一个题目是A+B Problem。</p>
-<figure data-type="image" tabindex="4"><img src="https://i.loli.net/2020/10/16/E2qfU1doaAQLDkW.png" alt="QQ图片20201016080833.png" loading="lazy"></figure>
-<p>他的洛谷博客也创作始于2年前，上传的第一篇博客是<a href="https://www.luogu.com.cn/blog/froggy/solution-p1498">题解 P1498 【南蛮图腾】</a>。</p>
-<p>这个博客一直没有什么热度，直到去年他获得过CSP 400分以上的成绩后，才收获了第一条回复。</p>
-<p>直到后来，从一年前开始，他在AtCoder编程竞赛网站上刷题，一下子变成了高产播主，接连上传了近30个博客。</p>
-<p>其中点赞数最高的是他写的AGC 045 的题解，点赞数即将突破一万大关。</p>
-<figure data-type="image" tabindex="5"><img src="https://i.loli.net/2020/10/16/64KNrwz2BcRF3YA.png" alt="fr.PNG" loading="lazy"></figure>
-<p>对于编程爱好者来说，这个只有文字的博客可以说是全程高能。因为AtCoder给了2.5个小时的时间，而张湫阳在赛后补题的时候只用16分5秒就解决了所有问题，毫无疑问如果参加比赛，将把所有选手踩在脚下。</p>
-<figure data-type="image" tabindex="6"><img src="https://i.loli.net/2020/10/16/QK16Od8PLlsem5v.png" alt="QQ图片20201016082023.png" loading="lazy"></figure>
-<p>下图是正式参赛选手的比赛时候的榜，前几位的选手都是世界排名前几的知名选手，多来自世界顶级大学，例如ksun48来自就来自美国的顶级学府MIT。</p>
-<figure data-type="image" tabindex="7"><img src="https://i.loli.net/2020/10/16/gB51UAyzxsSJmQa.png" alt="QQ图片20201016083208.png" loading="lazy"></figure>
-<p>有网友看完这个博客后说：Froggy可以在20分钟内解决AGC 045的编程竞赛题，而我20分钟连A题的题目都看不懂。</p>
-<figure data-type="image" tabindex="8"><img src="https://i.loli.net/2020/10/16/YnDNL6oVqXy1SJa.png" alt="s2.PNG" loading="lazy"></figure>
-<p>能如此耐心解答问题，引来一些爱好编程的学生“催更”：请上传所有比赛题解好吗？</p>
-<figure data-type="image" tabindex="9"><img src="https://i.loli.net/2020/10/16/lNc6wbCDyMEFSIh.png" alt="s1.PNG" loading="lazy"></figure>
-<h3 id="从河南省队逆袭到全球第四">从河南省队逆袭到全球第四</h3>
-<p>当被问及怎么样才能才能成为一个好的程序员（computer programmer，CP）时，张湫阳只给了一个建议：</p>
-<blockquote>
-<p>除非像我一样天赋异禀，否则不可能！</p>
-</blockquote>
-<p>因为，他本人就是这么天才。</p>
-<p>事实上，张湫阳在ISIJ前就参加了ccf NOI系列赛事河南省的省队选拔，但第一次比赛的过程，并没有想象中那般顺利。</p>
-<p>在HAOI2020中，张湫阳总分只有310分。当然，这样的成绩，也足以让他进入省队。</p>
-<p>但张湫阳并不满足于这样的水平。在那之后，到今年参加ISIJ前，他开始在CodeForces上刷题。</p>
-<p>为了准备ISIJ，张湫阳甚至不惜不参加中考的复习，把中考前的复习时间全部投入到了ISIJ的备战当中。</p>
-<p>有时候甚至一天十几题：</p>
-<figure data-type="image" tabindex="10"><img src="https://i.loli.net/2020/10/16/OBWxHTSzl19t7JC.png" alt="QQ图片20201016083913.png" loading="lazy"></figure>
-<p>而且，如果返回Accepted，他会要求自己重新重写一遍代码，直到得到比标算更优的解为止。</p>
-<figure data-type="image" tabindex="11"><img src="https://i.loli.net/2020/10/16/sWMQPlCeIxD3w2K.png" alt="QQ图片20201016085018.png" loading="lazy"></figure>
-<p>上图是张湫阳通过了CodeForces最难的几个问题之一的提交记录，可以看到张湫阳后来的提交速度整整快了5秒。</p>
-<p>此外，张湫阳也没有忘记参加各种编程竞赛，不断积累经验。</p>
-<p>例如，在今年，张湫阳就参加了AtCoder举办的编程竞赛AtCoder Grand Contest 044、由清华大学计算机系学生算法与竞赛协会联合学堂在线举办的高水平系列赛事“code+程序设计网络挑战赛”。</p>
-<p>并且在这些比赛中，张湫阳都获得了非常优秀的成绩，他还在社交平台上说：“这些比赛好水啊，不会真有人不能阿克吧？”。</p>
-<figure data-type="image" tabindex="12"><img src="https://i.loli.net/2020/10/16/Gk9HNyR1jtF6vOP.png" alt="QQ图片20201016091300.png" loading="lazy"></figure>
-<p>也就是说，张湫阳会利用各个空余的时间，去到处比赛、刷题。</p>
-<p>这样的努力也终于给他带来了丰硕的成果。</p>
-<p>今年7月，张湫阳终于在今年拿下ISIJ金牌，并且是全球第四名。</p>
-<h3 id="游戏时间勿扰">“游戏时间，勿扰”</h3>
-<p>然而，张湫阳并不像大众看起来那般“大神”——一天24小时都在学习。</p>
-<p>事实上，他也与许多人一样，会在闲暇时间与朋友玩耍、甚至是打游戏。</p>
-<p>例如，在准备ISIJ的训练中，每天下午四点张湫阳会准时和同学一起去打乒乓球，强身健体的同时，也能让自己的眼睛得到休息。</p>
-<p>此外，在他平时训练累的时候，还会时不时打两局“逃跑吧！少年”。</p>
-<p>张湫阳在休息与学习中划分了一条非常明确的界限：用心地学，也要尽兴玩。</p>
-<p>此外，张湫阳还建立了自己的服务器，希望能在这里与热爱编程的人们一起讨论各种有意思的竞赛题目（Codeforces, CodeChef, AtCoder）、面试（LeetCode）和奥赛相关的话题（IOI, NOI）。</p>
-<p>不过，他要求粉丝们公开膜拜自己，这个不难从他博客下方的评论看出：</p>
-<figure data-type="image" tabindex="13"><img src="https://i.loli.net/2020/10/16/WOBEoXnMhs87UZH.png" alt="QQ图片20201016085643.png" loading="lazy"></figure>
-<p>这是个非常开放的社区，除了编程、面试与竞赛以外，社区里也有讨论各种音乐、游戏与基础学科的栏目。</p>
-<p>当然，还有专设的meme（表情包）分享栏。</p>
-<p>事实上，张湫阳平日里也很幽默，会在社交媒体上分享自己做的meme。</p>
-<figure data-type="image" tabindex="14"><img src="https://i.loli.net/2020/10/16/cagFjLTNyDVUX7S.png" alt="QQ图片20201016092227.png" loading="lazy"></figure>
-]]></content>
-    </entry>
+    <rights>All rights reserved 2021, accepted&apos;s blog</rights>
     <entry>
         <title type="html"><![CDATA[sth to learn]]></title>
         <id>https://accepted.top/post/sth-to-learn/</id>
@@ -418,6 +343,108 @@ int main(){
     return 0;
 }
 </code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[离散化]]></title>
+        <id>https://accepted.top/post/chi-san-hua/</id>
+        <link href="https://accepted.top/post/chi-san-hua/">
+        </link>
+        <updated>2020-07-01T12:36:26.000Z</updated>
+        <content type="html"><![CDATA[<p>离散化：</p>
+<pre><code class="language-cpp">For(i,1,n){
+	read(a[i].v);
+    a[i].id=i;
+}
+sort(a+1,a+1+n);按v排序
+For(i,1,n) b[a[i].id]=i;
+</code></pre>
+<pre><code class="language-cpp">For(i,1,n)read(a[i]),b[i]=a[i];
+ sort(b+1,b+n+1);
+len=unique(b+1,b+n+1)-b-1;
+For(i,1,n) a[i]=lower_bound(b+1,b+len+1,a[i])-b;
+</code></pre>
+<p>这是离散化代码。</p>
+<p>我来帮助理解一下：</p>
+<table>
+<thead>
+<tr>
+<th>v</th>
+<th>1005</th>
+<th>12</th>
+<th>234</th>
+<th>5</th>
+<th>3421</th>
+<th>11111</th>
+<th>42</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p>排序过后：</p>
+<table>
+<thead>
+<tr>
+<th>v</th>
+<th>5</th>
+<th>12</th>
+<th>42</th>
+<th>234</th>
+<th>1005</th>
+<th>3421</th>
+<th>11111</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>4</td>
+<td>2</td>
+<td>7</td>
+<td>3</td>
+<td>1</td>
+<td>5</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>最后赋值进b数组</p>
+<table>
+<thead>
+<tr>
+<th>b[1]</th>
+<th>b[2]</th>
+<th>b[3]</th>
+<th>b[4]</th>
+<th>b[5]</th>
+<th>b[6]</th>
+<th>b[7]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>6</td>
+<td>7</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>感性理解一下就很简单了。</p>
 ]]></content>
     </entry>
 </feed>
