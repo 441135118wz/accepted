@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://accepted.top</id>
     <title>accepted&apos;s blog</title>
-    <updated>2021-05-08T10:25:57.228Z</updated>
+    <updated>2021-05-15T09:48:05.603Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://accepted.top"/>
     <link rel="self" href="https://accepted.top/atom.xml"/>
@@ -40,6 +40,9 @@
         <content type="html"><![CDATA[<p>欢迎来看我的博客。</p>
 <p>这个博客是我用来写一些算法，题解的。</p>
 <p>因为博主很菜，所以文章写的不会很严谨，有什么写的不对的地方还请细心的读者指出。</p>
+<p>5.15 更新</p>
+<p>博主从去年联赛后就已经全身心投入文化课了，算法什么的也没什么时间研究了。<br>
+目前打算记录生活用。</p>
 ]]></content>
     </entry>
     <entry>
