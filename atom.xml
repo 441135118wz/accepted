@@ -2,13 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://accepted.top</id>
     <title>accepted&apos;s blog</title>
-    <updated>2021-05-15T09:48:05.603Z</updated>
+    <updated>2021-05-22T09:39:48.536Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://accepted.top"/>
     <link rel="self" href="https://accepted.top/atom.xml"/>
     <logo>https://accepted.top/images/avatar.png</logo>
     <icon>https://accepted.top/favicon.ico</icon>
     <rights>All rights reserved 2021, accepted&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[2]]></title>
+        <id>https://accepted.top/post/2/</id>
+        <link href="https://accepted.top/post/2/">
+        </link>
+        <updated>2021-05-22T09:33:44.000Z</updated>
+        <content type="html"><![CDATA[<p>怎么和别人相处呢？</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[新的开始]]></title>
         <id>https://accepted.top/post/xin-de-kai-shi/</id>
@@ -346,108 +355,6 @@ int main(){
     return 0;
 }
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[离散化]]></title>
-        <id>https://accepted.top/post/chi-san-hua/</id>
-        <link href="https://accepted.top/post/chi-san-hua/">
-        </link>
-        <updated>2020-07-01T12:36:26.000Z</updated>
-        <content type="html"><![CDATA[<p>离散化：</p>
-<pre><code class="language-cpp">For(i,1,n){
-	read(a[i].v);
-    a[i].id=i;
-}
-sort(a+1,a+1+n);按v排序
-For(i,1,n) b[a[i].id]=i;
-</code></pre>
-<pre><code class="language-cpp">For(i,1,n)read(a[i]),b[i]=a[i];
- sort(b+1,b+n+1);
-len=unique(b+1,b+n+1)-b-1;
-For(i,1,n) a[i]=lower_bound(b+1,b+len+1,a[i])-b;
-</code></pre>
-<p>这是离散化代码。</p>
-<p>我来帮助理解一下：</p>
-<table>
-<thead>
-<tr>
-<th>v</th>
-<th>1005</th>
-<th>12</th>
-<th>234</th>
-<th>5</th>
-<th>3421</th>
-<th>11111</th>
-<th>42</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-</tr>
-</tbody>
-</table>
-<p>排序过后：</p>
-<table>
-<thead>
-<tr>
-<th>v</th>
-<th>5</th>
-<th>12</th>
-<th>42</th>
-<th>234</th>
-<th>1005</th>
-<th>3421</th>
-<th>11111</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>id</td>
-<td>4</td>
-<td>2</td>
-<td>7</td>
-<td>3</td>
-<td>1</td>
-<td>5</td>
-<td>6</td>
-</tr>
-</tbody>
-</table>
-<p>最后赋值进b数组</p>
-<table>
-<thead>
-<tr>
-<th>b[1]</th>
-<th>b[2]</th>
-<th>b[3]</th>
-<th>b[4]</th>
-<th>b[5]</th>
-<th>b[6]</th>
-<th>b[7]</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>5</td>
-<td>2</td>
-<td>4</td>
-<td>1</td>
-<td>6</td>
-<td>7</td>
-<td>3</td>
-</tr>
-</tbody>
-</table>
-<p>感性理解一下就很简单了。</p>
 ]]></content>
     </entry>
 </feed>
