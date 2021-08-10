@@ -2,13 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://accepted.top</id>
     <title>accepted&apos;s blog</title>
-    <updated>2021-05-22T09:39:48.536Z</updated>
+    <updated>2021-08-10T13:23:38.867Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://accepted.top"/>
     <link rel="self" href="https://accepted.top/atom.xml"/>
     <logo>https://accepted.top/images/avatar.png</logo>
     <icon>https://accepted.top/favicon.ico</icon>
     <rights>All rights reserved 2021, accepted&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[新的开始123]]></title>
+        <id>https://accepted.top/post/xin-de-kai-shi-123/</id>
+        <link href="https://accepted.top/post/xin-de-kai-shi-123/">
+        </link>
+        <updated>2021-08-10T07:26:06.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="810">8.10</h2>
+<p>下决心戒掉LOL的第一天。<br>
+路漫漫其修远兮，争取暑假戒掉。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[2]]></title>
         <id>https://accepted.top/post/2/</id>
@@ -321,37 +332,6 @@ signed main() {
     
 	For(i,1,n) ans+=Left[i]*Right[i];
 	write(ans);
-    return 0;
-}
-</code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[树状数组求逆序对]]></title>
-        <id>https://accepted.top/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/</id>
-        <link href="https://accepted.top/post/shu-zhuang-shu-zu-qiu-ni-xu-dui/">
-        </link>
-        <updated>2020-07-01T13:18:00.000Z</updated>
-        <content type="html"><![CDATA[<p>从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 枚举，考虑当前枚举到的位置 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> ，他对总的逆序对的个数的贡献就是他前面的权值大于他的权值的数的个数，所以我们在i的权值的位置修改树状数组，表示 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的权值这个数已经出现过了，那么到了后面就可以直接查询从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> 的权值的位置的总和。</p>
-<pre><code class="language-cpp">void add(int i,int t){
-    while(i&lt;=len){//这里的len是元素种类，具体见上一篇博客
-        c[i]+=t;
-        i+=lowbit(i);
-    }
-}
-int main(){
-    int n;
-    cin&gt;&gt;n;
-    for(int i=1;i&lt;=n;i++){
-        int t;
-        cin&gt;&gt;t;
-        add(t,1);
-        ans+=i-sum(t);
-    }
-    for(int i=1;i&lt;=n;i++){
-        cout&lt;&lt;c[i]&lt;&lt;endl;
-    }
-    cout&lt;&lt;ans&lt;&lt;endl;
     return 0;
 }
 </code></pre>
